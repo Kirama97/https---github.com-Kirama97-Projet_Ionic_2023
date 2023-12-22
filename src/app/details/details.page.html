@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+       <img class="logo" src="/assets/imgs/logo.png" alt="">
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true" *ngIf="article" padding>
+  <ion-card>
+   
+    
+  </ion-card>
+  <ion-card>
+    <img class="image" [src]="article.image[0]">
+   
+    <ion-card-header>
+      <ion-card-title>{{article.titre}}</ion-card-title>
+      <ion-card-subtitle>{{article.categorie}}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{article.description}}</p>
+      <p slot="end">{{article.prix | currency}}</p>
+      <p>
+       <span *ngFor="let etoile of article.etoile" >
+          <ion-icon class="etoile_icon" name="star"></ion-icon>
+       </span>
+      </p>
+    </ion-card-content>
+  </ion-card>
+ 
+</ion-content>
+<!-- <ion-footer>
+  <ion-toolbar>
+    <ion-title> Footer </ion-title>
+  </ion-toolbar>
+</ion-footer> -->
+
+
+
+
+<script>
+
+  import { Autoplay, Keyboard, Pagination, Scrollbar, Zoom } from 'swiper';
+
+
+
+  import 'swiper/css';
+  import 'swiper/css/autoplay';
+  import 'swiper/css/keyboard';
+  import 'swiper/css/pagination';
+  import 'swiper/css/scrollbar';
+  import 'swiper/css/zoom';
+  import '@ionic/vue/css/ionic-swiper.css';
+
+  export default defineComponent({
+    components: { Swiper, SwiperSlide, IonContent, IonPage },
+    setup() {
+      return {
+        modules: [Autoplay, Keyboard, Pagination, Scrollbar, Zoom],
+      };
+    },
+  });
+</script>

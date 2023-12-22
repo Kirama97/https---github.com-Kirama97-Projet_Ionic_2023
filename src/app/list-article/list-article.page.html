@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+ <img class="logo" src="/assets/imgs/logo.png" alt="">
+</ion-toolbar>
+</ion-header>
+
+
+
+<ion-content fullscreen={true}>
+        <ion-list>
+          <!-- Entete -->
+          <ion-list-header>
+            <ion-label>
+              Categorie Sport
+            </ion-label>
+          </ion-list-header>
+          <ion-item  *ngFor="let article of listArticles" (click)="gotodetails(article)">
+            <ion-thumbnail slot="start">
+              <img [src]="article.image[0]" />
+            </ion-thumbnail>
+            <ion-label>
+              <h2>{{article.titre}}</h2>
+              <p>{{article.description}}</p>
+              <p slot="end">{{article.prix | currency}}</p>
+              <p>
+                <span *ngFor="let etoile of article.etoile" >
+              <ion-icon class="etoile_icon" name="star"></ion-icon>
+              </span>
+            </p>
+            </ion-label>
+          </ion-item>
+          </ion-list>
+</ion-content>
+<!-- <ion-footer>
+  <ion-toolbar>
+    <ion-title> Footer </ion-title>
+  </ion-toolbar>
+</ion-footer> -->

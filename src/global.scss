@@ -24,3 +24,25 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+.etoile_icon{
+    color:rgb(255, 208, 0)
+  }
+
+  ion-content::part(background) {
+    background: #0671d45d;
+  }
+  
+  ion-content::part(scroll) {
+    color: #fff;
+  }
+
+  ion-toolbar::part(background) {
+    background: #0671d45d;
+  }
+
+  .logo{
+    object-fit: cover;
+    height: 80px;
+    width: 150px;
+  }
