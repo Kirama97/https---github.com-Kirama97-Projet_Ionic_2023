@@ -14,12 +14,15 @@ export class ListArticlePage implements OnInit {
   listArticles : ARTICLE[] = Articles;
 
   gotodetails(article:ARTICLE) {
-    console.log(article)
+    
    this.route.navigate(['/details',article]);
   }
 
 
   ngOnInit() {
+  }
+  handleInput(){
+
   }
 
 }

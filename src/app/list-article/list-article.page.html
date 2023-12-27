@@ -1,12 +1,18 @@
-<ion-header>
-  <ion-toolbar>
- <img class="logo" src="/assets/imgs/logo.png" alt="">
+<ion-header slot="fixed">
+      <ion-toolbar>
+        <ion-title class="ion-text-center">Listes Article</ion-title>
+        <ion-menu-button  menu="main-menu" slot="start" fill="clear">
+          <ion-icon  md="list-sharp" ios="list-outline"></ion-icon>
+       </ion-menu-button>
+        <ion-buttons slot="end">
+          <ion-button>
+            <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
+          </ion-button>
+          <ion-badge>0</ion-badge>
+        </ion-buttons>
 </ion-toolbar>
 </ion-header>
-
-
-
-<ion-content fullscreen={true}>
+<ion-content fullscreen={true}  class="ion-padding">
         <ion-list>
           <!-- Entete -->
           <ion-list-header>
@@ -21,7 +27,7 @@
             <ion-label>
               <h2>{{article.titre}}</h2>
               <p>{{article.description}}</p>
-              <p slot="end">{{article.prix | currency}}</p>
+              <p slot="end">{{article.prix}} XOF</p>
               <p>
                 <span *ngFor="let etoile of article.etoile" >
               <ion-icon class="etoile_icon" name="star"></ion-icon>

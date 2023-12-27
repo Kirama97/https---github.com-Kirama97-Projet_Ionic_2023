@@ -4,12 +4,19 @@
     width: 100%;
     height: 200px;
     object-fit: cover;
+    margin: 0 5px;
 }
 ion-content::part(background) {
-    background: #d33d0f5d;
+    background: --color-primary;
   }
   
   ion-content::part(scroll) {
     color: #fff;
   }
   
+swiper-container{
+  --swiper-pagination-bullet-inactice-color:dark
+  --swiper-pagination-color: #d33d0f5d;
+  margin: 5px;
+}
+

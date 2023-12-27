@@ -1,61 +1,107 @@
-<ion-header>
+<ion-header >
   <ion-toolbar>
-       <img class="logo" src="/assets/imgs/logo.png" alt="">
-  </ion-toolbar>
+    <ion-title class="ion-text-center">Listes Article</ion-title>
+      <ion-menu-button  menu="main-menu" slot="start" fill="clear">
+         <ion-icon  md="list-sharp" ios="list-outline"></ion-icon>
+      </ion-menu-button>
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
+      </ion-button>
+      <ion-badge>0</ion-badge>
+    </ion-buttons>
+   </ion-toolbar>
 </ion-header>
-<ion-content [fullscreen]="true" *ngIf="article" padding>
+<ion-content [fullscreen]="true" *ngIf="article" padding  >
   <ion-card>
-   
-    
-  </ion-card>
-  <ion-card>
-    <img class="image" [src]="article.image[0]">
-   
+    <swiper-container 
+    [autoplay]="500"
+    [loop]="true"
+    [pagination]="true"
+    [zoom]="true"
+     >
+        <swiper-slide>
+          <div class="slide"  class="swiper-zoom-container">
+          <img class="image" [src]="article.image[0]">
+         </div>
+        </swiper-slide>
+        <swiper-slide >
+          <div class="slide"  class="swiper-zoom-container">
+          <img class="image" [src]="article.image[1]">
+        </div>
+        </swiper-slide>
+    </swiper-container>
     <ion-card-header>
-      <ion-card-title>{{article.titre}}</ion-card-title>
-      <ion-card-subtitle>{{article.categorie}}</ion-card-subtitle>
+        <ion-card-title>{{article.titre}}</ion-card-title>
+        <ion-card-subtitle>{{article.categorie}}</ion-card-subtitle>
     </ion-card-header>
     <ion-card-content>
-      <p>{{article.description}}</p>
-      <p slot="end">{{article.prix | currency}}</p>
+      <ion-chip color="primary">
+        <ion-icon name="location-outline"></ion-icon>
+        <ion-label> {{article.region}}</ion-label>
+      </ion-chip>
+      <ion-chip color="secondary">
+        <ion-icon name="calendar-outline"></ion-icon>
+        <ion-label>{{article.date | date:"dd/MM/YYYY"}}</ion-label>
+      </ion-chip>
+      <ion-chip color="success">
+        <ion-label color="text-color: #ffffff">{{article.state}}</ion-label>
+        <ion-icon name="checkmark-outline"></ion-icon>
+      </ion-chip>
+      <ion-chip color="success">
+        <ion-icon name="cash-outline"></ion-icon>
+        <ion-label>{{article.disponibilite?.frais}} XOF</ion-label>
+        <ion-icon name="checkmark-outline"></ion-icon>
+      </ion-chip>
+      <ion-chip color="success">
+        <ion-icon name="walk-outline"></ion-icon>
+        <ion-label>{{article.disponibilite?.type}}</ion-label>
+        <ion-icon name="checkmark-outline"></ion-icon>
+      </ion-chip>
+      <p slot="end"> Prix : {{article.prix}} XOF</p>
       <p>
-       <span *ngFor="let etoile of article.etoile" >
-          <ion-icon class="etoile_icon" name="star"></ion-icon>
-       </span>
-      </p>
+        <span *ngFor="let etoile of article.etoile" >
+           <ion-icon class="etoile_icon" name="star"></ion-icon>
+        </span>
+     </p>
+      <p>Description : {{article.description}}</p>
+      <ion-grid>
+        <ion-row >
+          <ion-col>
+            <ionoc-start-rating
+            activeIcon ="ios-star"
+            defaultIcon = "ios-star-outline"
+            activeColor ="#488aff"
+            defaultColor ="#f4f4f4"
+            readonly ="false"
+            [reating]="3"
+            ></ionoc-start-rating>
+          </ion-col>
+          <ion-col size="auto" offset="1">
+             <ion-button class="ion-padding" fill="clear">Noter</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </ion-card-content>
   </ion-card>
- 
+
+  <!-- bouton flotante -->
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end" class="ion-padding">
+    <ion-button color="primary"  mode="ios">
+      Acheter
+    </ion-button>
+  </ion-fab>
 </ion-content>
-<!-- <ion-footer>
-  <ion-toolbar>
-    <ion-title> Footer </ion-title>
-  </ion-toolbar>
-</ion-footer> -->
-
-
-
-
-<script>
-
-  import { Autoplay, Keyboard, Pagination, Scrollbar, Zoom } from 'swiper';
-
-
-
-  import 'swiper/css';
-  import 'swiper/css/autoplay';
-  import 'swiper/css/keyboard';
-  import 'swiper/css/pagination';
-  import 'swiper/css/scrollbar';
-  import 'swiper/css/zoom';
-  import '@ionic/vue/css/ionic-swiper.css';
-
-  export default defineComponent({
-    components: { Swiper, SwiperSlide, IonContent, IonPage },
-    setup() {
-      return {
-        modules: [Autoplay, Keyboard, Pagination, Scrollbar, Zoom],
-      };
-    },
-  });
-</script>
+   <!-- <ion-menu  menuId="tomenu"  contentId="main-content">
+ <div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+   
+  </ion-content>
+</div> 
+</ion-menu>  -->

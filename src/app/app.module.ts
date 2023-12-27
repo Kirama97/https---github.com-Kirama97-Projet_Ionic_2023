@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ArticleEtoilePipe } from './list-article/article-etoile.pipe'; 
 
+
 @NgModule({
   declarations: [AppComponent, ArticleEtoilePipe],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
