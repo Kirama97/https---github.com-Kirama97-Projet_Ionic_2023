@@ -1,14 +1,8 @@
-// export class ARTICLE {
-//     id:number| undefined;
-//     nom : string| undefined;
-//     prix :number | undefined;
-//     description : string | undefined;
-
-// }
 
 export class ARTICLE {
     id:string | undefined;
     titre : string | undefined;
+    Marque:string|undefined
     description:string | undefined;
     image:string[] | any; 
     prix : number | undefined ; 

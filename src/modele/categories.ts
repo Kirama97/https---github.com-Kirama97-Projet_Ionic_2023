@@ -5,5 +5,5 @@ export class CATEGORIE {
     titre :string | undefined;
     description : string | undefined;
     icone:string| undefined;
-    articles :ARTICLE[] | undefined
+    liste_articles :ARTICLE[] | undefined;
 }

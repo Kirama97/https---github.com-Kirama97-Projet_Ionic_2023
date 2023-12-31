@@ -1,44 +1,70 @@
-<ion-header slot="fixed">
-      <ion-toolbar>
-        <ion-title class="ion-text-center">Listes Article</ion-title>
-        <ion-menu-button  menu="main-menu" slot="start" fill="clear">
-          <ion-icon  md="list-sharp" ios="list-outline"></ion-icon>
-       </ion-menu-button>
-        <ion-buttons slot="end">
-          <ion-button>
-            <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
-          </ion-button>
-          <ion-badge>0</ion-badge>
-        </ion-buttons>
+<ion-header >
+  <ion-toolbar color="primary">
+    <ion-button slot="start" (click)=" Back()" fill="clear" color="light">
+      <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>
+    </ion-button>
+    <ion-title class="ion-text-center">Categorie</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
+      </ion-button>
+      <ion-badge>0</ion-badge>
+    </ion-buttons>
 </ion-toolbar>
 </ion-header>
-<ion-content fullscreen={true}  class="ion-padding">
-        <ion-list>
-          <!-- Entete -->
-          <ion-list-header>
-            <ion-label>
-              Categorie Sport
-            </ion-label>
-          </ion-list-header>
-          <ion-item  *ngFor="let article of listArticles" (click)="gotodetails(article)">
-            <ion-thumbnail slot="start">
-              <img [src]="article.image[0]" />
-            </ion-thumbnail>
-            <ion-label>
-              <h2>{{article.titre}}</h2>
-              <p>{{article.description}}</p>
-              <p slot="end">{{article.prix}} XOF</p>
-              <p>
-                <span *ngFor="let etoile of article.etoile" >
-              <ion-icon class="etoile_icon" name="star"></ion-icon>
-              </span>
-            </p>
-            </ion-label>
-          </ion-item>
-          </ion-list>
-</ion-content>
-<!-- <ion-footer>
-  <ion-toolbar>
-    <ion-title> Footer </ion-title>
-  </ion-toolbar>
-</ion-footer> -->
+
+<ion-content>
+    <div  class="containcatscrol">
+      <ion-segment  scrollable  class="ion-padding" >
+        <ion-segment-button *ngFor="let Categories of listCategories" (click)="gotocategorie(Categories)" mode="ios">
+          <ion-text color="primary">
+           <p>{{Categories.titre}}</p>
+          </ion-text>
+        </ion-segment-button>
+    </ion-segment> 
+    </div>
+    <ion-card class="blocvideo"  scrollable="true" id="card2" >
+      <swiper-container  [autoplay]="1500" 
+      [loop]="true">
+        <swiper-slide>
+        <video [autoplay]="1500" [loop]="true"  class="home_bar" src="/assets/imgs/accueil/categorie_presentation.mp4"></video>
+    </swiper-slide>
+        <swiper-slide  >
+        <video [autoplay]="1500" [loop]="true"  class="home_bar" src="/assets/imgs/accueil/categorie_presentation.mp4"></video>
+    </swiper-slide>
+    </swiper-container>
+    
+</ion-card >
+
+        <div class="contentbar" *ngFor="let Categories of listCategories">
+          <ion-list>
+            <ion-list-header>
+             <ion-label>
+              <ion-item-divider color="primary">
+                <ion-text color="light">
+                  <p>{{Categories.titre}}</p>
+                </ion-text>
+                
+              </ion-item-divider>
+            
+             </ion-label>
+           </ion-list-header>
+           <ion-item  *ngFor="let categories of Categories.liste_articles" (click)="gotodetails(categories)">
+             <ion-thumbnail slot="start">
+               <img [src]="categories.image[0]" />
+             </ion-thumbnail>
+             <ion-label>
+             
+               <h2>{{categories.titre}}</h2>
+               <p>{{categories.description}}</p>
+               <p slot="end">{{categories.prix}} FCFA</p>
+               <p>
+                 <span *ngFor="let etoile of categories.etoile" >
+               <ion-icon class="etoile_icon" name="star"></ion-icon>
+               </span>
+             </p>
+             </ion-label>
+           </ion-item>
+           </ion-list>
+          </div>
+</ion-content> 

@@ -4,6 +4,8 @@ import { ARTICLE } from 'src/modele/article';
 import { DetailsPage } from './details/details.page';
 import { CATEGORIE } from 'src/modele/categories';
 import { Categories } from 'src/modele/list-categorie';
+import {register} from 'swiper/element/bundle';
+register();
 
 
 
@@ -20,18 +22,17 @@ export class AppComponent {
   
  
   constructor (private route : Router){}
-
-gotocategorie(Categories:CATEGORIE){
-  console.log('categorie');
-
-}
+  gotocategorie(Categories:CATEGORIE){
+    console.table(Categories);
+     this.route.navigate(['/categorie-page',Categories]);
+  
+  }
 
   ngOnInit(): void {
-    console.table(Categories)
+ 
   }
 
  goToListe(){
-
   this.route.navigate(['/list-article'])
  }
 

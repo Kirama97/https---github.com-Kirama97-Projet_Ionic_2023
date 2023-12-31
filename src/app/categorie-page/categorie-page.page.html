@@ -1,0 +1,64 @@
+<ion-header >
+  <ion-toolbar  color="primary">
+    <ion-button slot="start" (click)=" Back()" fill="clear" color="light" >
+      <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>
+    </ion-button>
+    <ion-title class="ion-text-center">Categorie {{Onecategorie?.titre}}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
+      </ion-button>
+      <ion-badge>0</ion-badge>
+    </ion-buttons>
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-segment value="segment" scrollable  class="ion-padding" >
+    <ion-segment-button *ngFor="let Categories of listCategories" (click)="gotocategorie(Categories)" mode="ios" fill="clear" >
+      <ion-text color="primary">
+       <p>{{Categories.titre}}</p>
+      </ion-text>
+    </ion-segment-button>
+</ion-segment> 
+
+<ion-card class="blocvideo"  scrollable="true" id="card2">
+  <swiper-container  [autoplay]="1500" 
+  [loop]="true">
+    <swiper-slide>
+    <video [autoplay]="1500" [loop]="true"  class="home_bar" src="/assets/imgs/accueil/categorie_presentation.mp4"></video>
+</swiper-slide>
+    <swiper-slide  >
+    <video [autoplay]="1500" [loop]="true"  class="home_bar" src="/assets/imgs/accueil/categorie_presentation.mp4"></video>
+</swiper-slide>
+</swiper-container>
+
+</ion-card >
+
+
+
+
+  <div class="contentbar">
+    <ion-list>
+  
+     <ion-item  *ngFor="let categories of Onecategorie?.liste_articles " (click)="gotodetails(categories)">
+       <ion-thumbnail slot="start">
+         <img [src]="categories.image[0]" />
+       </ion-thumbnail>
+       <ion-label>
+         <h2>{{categories.titre}}</h2>
+         <p>{{categories.description}}</p>
+         <p slot="end">{{categories.prix}} FCFA</p>
+         <p>
+           <span *ngFor="let etoile of categories.etoile" >
+         <ion-icon class="etoile_icon" name="star"></ion-icon>
+         </span>
+       </p>
+       </ion-label>
+     </ion-item>
+     </ion-list>
+    </div>
+
+
+   
+</ion-content>

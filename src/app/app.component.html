@@ -9,7 +9,7 @@
       <ion-title>Menu</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content [fullscreen]="true" >
+  <ion-content [fullscreen]="true">
    <ion-list>
     <ion-item-divider color="primary">
       Categories
@@ -38,6 +38,9 @@
       </ion-item>
     </ion-menu-toggle>
    </ion-list>
+   <div>
+    <img src="/assets/imgs/logo.png" alt="" srcset="">
+   </div>
   </ion-content>
 </ion-menu> 
 
@@ -45,11 +48,11 @@
   <ion-tab-bar slot="bottom">
     <ion-tab-button tab="home" >
       <ion-icon name="storefront-outline"></ion-icon>
-      home
+      accueil
     </ion-tab-button>
     <ion-tab-button tab="listArticles" routerLink="list-article">
       <ion-icon name="grid-outline"></ion-icon> 
-      Articles
+      categorie
     </ion-tab-button>
     <ion-tab-button tab="compte">
       <ion-icon name="person-outline"></ion-icon>
