@@ -15,11 +15,11 @@
       Categories
     </ion-item-divider>
     <ion-menu-toggle>
-      <ion-item menu="close" *ngFor="let Categories of listCategories" (click)="gotocategorie(Categories)">
-        <ion-icon [name]="Categories.icone" slot="start"></ion-icon>
+      <ion-item menu="close" *ngFor="let categories of listCategories" (click)="gotocategorie(categories)">
+        <ion-icon [name]="categories.icone" slot="start"></ion-icon>
         <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
         <ion-label>
-          <p>{{Categories.titre}}</p>
+          <p>{{categories.titre}}</p>
         </ion-label>
       </ion-item>
     </ion-menu-toggle>
@@ -54,9 +54,9 @@
       <ion-icon name="grid-outline"></ion-icon> 
       categorie
     </ion-tab-button>
-    <ion-tab-button tab="compte">
+    <ion-tab-button tab="panier" routerlink="paner" >
       <ion-icon name="person-outline"></ion-icon>
-      compte
+      panier
     </ion-tab-button>
     <ion-tab-button tab="search" routerLink="recherche">
       <ion-icon name="search"></ion-icon>

@@ -1,0 +1,64 @@
+<ion-header >
+  <ion-toolbar  color="primary">
+    <ion-button slot="start" (click)=" Back()" fill="clear" color="light" >
+      <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>
+    </ion-button>
+      <ion-title class="ion-text-center">Panier</ion-title>
+    <ion-buttons slot="end">
+      <ion-button >
+        <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
+      </ion-button>
+      <ion-badge>0</ion-badge>
+    </ion-buttons>
+   </ion-toolbar>
+</ion-header>
+
+<ion-content  >
+  <ion-card *ngFor="let article of panier">
+     <ion-list>
+      <ion-item>
+     
+        <ion-thumbnail slot="start">
+          <img [src]="article.article.image[0]" alt="" srcset="">
+        </ion-thumbnail>
+        <ion-label>
+          <h2>{{article.article.titre}}</h2>
+          <p> Unitaire {{article.article.prix}} CFA</p>
+        </ion-label>
+        <ion-button  id="present-alert" color="danger" (click)="deletearticle(article)"> 
+     
+          <ion-icon  name="close-outline"></ion-icon>
+      </ion-button> 
+
+      </ion-item>
+      <ion-item>
+        <ion-label color="success">
+          <p>Somme : {{article?.somme}} CFA</p>
+        </ion-label>
+        <ion-buttons slot="end">
+          <ion-button>
+           <ion-icon slot="icon-only" name="add-outline"></ion-icon>
+          </ion-button>
+          <p>{{article?.quantite}}</p>
+          <ion-button>
+           <ion-icon  slot="icon-only" name="remove-outline"></ion-icon>
+          </ion-button>
+        
+       </ion-buttons>
+      </ion-item>
+     </ion-list>
+     
+  </ion-card>
+
+
+
+  <ion-fab slot="fixed" expand="block" vertical="bottom" horizontal="center" class="ion-padding">
+    <ion-button  color="primary"  mode="ios" > 
+    Commander {{grandtotal}}
+   </ion-button>
+ </ion-fab>
+  <div >
+ 
+   
+  </div>
+  

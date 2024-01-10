@@ -1,10 +1,11 @@
 import { Component,OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Articles } from '../../modele/list-articles';
+// import { Articles } from '../../modele/list-articles';
 import { ARTICLE } from '../../modele/article';
 import { CATEGORIE } from 'src/modele/categories';
-import { Categories } from 'src/modele/list-categorie';
+// import { Categories } from 'src/modele/list-categorie';
 import {register} from 'swiper/element/bundle';
+import { ServiceTechshopService } from '../service-techshop.service';
 register();
 
 
@@ -21,9 +22,13 @@ throw new Error('Method not implemented.');
 }
 
 
-constructor(private route :Router) { }
-  listArticles : ARTICLE[] = Articles;
-  listCategories : CATEGORIE[]= Categories;
+constructor(private route :Router,private monserv :ServiceTechshopService) { }
+   
+listCategories : CATEGORIE[]= [];
+listArticles:ARTICLE[] =[];
+
+article:ARTICLE|undefined
+
 
 
   gotodetails(article:ARTICLE) {
@@ -35,6 +40,16 @@ constructor(private route :Router) { }
 
 
   ngOnInit() {
+
+    this.monserv.getcategorie().subscribe((data:CATEGORIE[]) =>{
+      this.listCategories = data
+      console.table(data)
+    } )
+
+    this.monserv.getarticle().subscribe((data1:ARTICLE[]) =>{
+      this.listArticles =data1
+    } )
+   
   }
   handleInput(){
 

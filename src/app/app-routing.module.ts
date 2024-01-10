@@ -9,7 +9,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+     redirectTo: 'home',
     pathMatch: 'full'
   },
  
@@ -28,6 +28,14 @@ const routes: Routes = [
   {
     path: 'categorie-page',
     loadChildren: () => import('./categorie-page/categorie-page.module').then( m => m.CategoriePagePageModule)
+  },
+  {
+    path: 'test',
+    loadChildren: () => import('./test/test.module').then( m => m.TestPageModule)
+  },
+  {
+    path: 'panier',
+    loadChildren: () => import('./panier/panier.module').then( m => m.PanierPageModule)
   },
  
 ];

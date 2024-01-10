@@ -2,7 +2,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ARTICLE } from 'src/modele/article';
-import { Articles } from 'src/modele/list-articles';
+import { ServiceTechshopService } from '../service-techshop.service';
+// import { Articles } from 'src/modele/list-articles';
 
  @Component({
    selector: 'app-recherche',
@@ -15,13 +16,16 @@ export class RecherchePage implements OnInit {
 
    article:ARTICLE|undefined
 
-  constructor(private route:Router) {
+  constructor(private route:Router,private monserv :ServiceTechshopService) {
     
-    this.listArticles = Articles;
+    this.listArticles = [];
     this.filteredList = this.listArticles; 
   }
    ngOnInit(): void {
-     throw new Error('Method not implemented.');
+     
+    this.monserv.getarticle().subscribe((data1:ARTICLE[]) =>{
+      this.listArticles =data1
+    } )
    }
 
   recherche(event: any) {
