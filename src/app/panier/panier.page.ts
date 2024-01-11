@@ -18,51 +18,74 @@ export class PanierPage implements OnInit {
   listArticles:ARTICLE[] | undefined
   article:ARTICLE|undefined
   panier :CART[]=[]
-  public grandtotal:number=0;
+  public sommetotal :number = 0
+  public indice :number = 0
+  
+ 
+
 
  ngOnInit() {
      this.getpanier()
-     this.gettotal()
-     
-    
+   
   }
 
   getpanier(){
     this.monserv.getCart().subscribe((data:CART[]) =>{
       this.panier =data;
-  
+     this.indice =data.length
+      this.totalcommande()
    } )
   }
+
+  totalcommande():void{
+    this.monserv.getSommeTotale().subscribe(somme =>{
+    this.sommetotal =somme
+ })
+   }
 
   Back(){
     this.router.navigate(['/home']);
   }
 
-  gettotal(){
-    this.panier.map((data:CART)=>{
-      this.grandtotal +=data.somme
-      console.log(this.grandtotal)
-    })
+  // gettotal(){
+  //   this.panier.map((data:CART)=>{
+  //     this.grandtotal +=data.somme
+  //     console.log(this.grandtotal)
+  //   })
 
-  }
+  // }
   deletearticle(article:CART){
-
+   
     console.log(article)
-    let id =article.id ? article.id:'';
-    this.monserv.delete(id).subscribe(()=>{
-      alert('supprimer avec succes')
+    let id =article.id
+    this.monserv. updateSommeTotaleAfterDelete(id).subscribe(()=> {
+     
       this.getpanier()
     })
   }
 
+deleteall(){
+ 
+this.monserv.viderPanier().subscribe(() => {
+  this.getpanier()
+  // Mettre à jour la somme totale ou effectuer d'autres actions si nécessaire
+  this.monserv.getSommeTotale().subscribe(somme => {
+    // Faire quelque chose avec la nouvelle somme totale
+  });
+});
 
-  // deletearticle(article:CART){
+  }
 
-  //   console.log(article)
-  //   let id =article.id
-  //   this.monserv.delete(id).subscribe(()=>{
-  //     alert('supprimer avec succes')
-  //     this.getpanier()
-  //   })
-  // }
+  actualise(){
+  window.location.reload()
+  }
+
+  public toastButtons = [
+    {
+      text: 'Dismiss',
+      role: 'cancel',
+      position: 'middle'
+    },
+  ];
+
 }

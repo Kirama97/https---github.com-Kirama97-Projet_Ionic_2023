@@ -5,17 +5,22 @@
     </ion-button>
       <ion-title class="ion-text-center">Panier</ion-title>
     <ion-buttons slot="end">
-      <ion-button >
+      <ion-button slot="icon-only" (click)="actualise()"  >
+        <ion-icon  name="refresh-outline"></ion-icon>
+      </ion-button>
+      <ion-button>
         <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
       </ion-button>
-      <ion-badge>0</ion-badge>
+      <ion-badge>{{indice}}</ion-badge>
     </ion-buttons>
+
    </ion-toolbar>
 </ion-header>
 
-<ion-content  >
-  <ion-card *ngFor="let article of panier">
+<ion-content color="medium" >
+  <ion-card *ngFor="let article of panier; index as i">
      <ion-list>
+      <ion-item>{{i + 1}}</ion-item>
       <ion-item>
      
         <ion-thumbnail slot="start">
@@ -52,13 +57,24 @@
 
 
 
-  <ion-fab slot="fixed" expand="block" vertical="bottom" horizontal="center" class="ion-padding">
-    <ion-button  color="primary"  mode="ios" > 
-    Commander {{grandtotal}}
-   </ion-button>
+  <ion-fab   slot="fixed" vertical="bottom" horizontal="center" class="ion-padding">
+    <ion-button   mode="ios" > 
+      Commander {{sommetotal}} cfa
+     </ion-button>
+     <ion-button   id="open-toast" color="danger"  mode="ios" (click)="deleteall()"> 
+      <ion-icon name="trash-outline"></ion-icon>
+    </ion-button>
+   
+<ion-toast
+  trigger="open-toast"
+  [duration]="3000"
+  message="Hello Styled World!"
+  class="custom-toast"
+  [buttons]="toastButtons"
+></ion-toast>
  </ion-fab>
+  
   <div >
  
-   
   </div>
   

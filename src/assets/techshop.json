@@ -1625,38 +1625,5 @@
       ]
     }
   ],
-  "panier": [
-    {
-      "article": {
-        "id": "9",
-        "titre": "Drone-pliable",
-        "description": " Le drone est adapté pour le vol en intérieur et extérieur avec une fonction de cascade roulante 3D omnidirectionnelle à 360 degrés, ascension/descente/avant/arrière/virage gauche-droite/vol côte à côte gauche-droite et d'autres fonctions de fonctionnement à grande échelle.Autonomie maximale 10 minutes et portée de 30 mètres Le drone dispose de fonctions de décollage/atterrissage et de mise à niveau à une touche, d'une transmission de photographie aérienne en temps réel FPV et d'un contrôle par téléphone portable.Drone Syma 2.4Ghz wifi vidéo HD Conception compacte et pliableBouton de décollage/atterrissageContrôle de l'application avec vue en directRetournement à 360Maintien de l'altitudeVol en tire-bouchon et vol en cercle préprogrammés.Autonomie Temps de vol : 10 minutesContenu de l'emballage :1 drone1 batterie intégrée 1 câble de charge USB4 hélices supplémentaires :1 contrôleur",
-        "Marque": "SYMA",
-        "image": [
-          "/assets/imgs/Électronique/Drone-pliable/Drone-pliable-pp.jpg",
-          "/assets/imgs/Électronique/Drone-pliable/Drone-pliable-1.jpg",
-          "/assets/imgs/Électronique/Drone-pliable/Drone-pliable-2.jpg",
-          "/assets/imgs/Électronique/Drone-pliable/Drone-pliable-p3.jpg"
-        ],
-        "prix": 36000,
-        "categorie": "Electronique",
-        "state": "Neuf",
-        "date": "2024-01-01T12:23:44.903Z",
-        "region": "Dakar",
-        "etoile": [
-          1,
-          2,
-          3
-        ],
-        "disponibilite": {
-          "disponible": true,
-          "type": "livraison",
-          "frais": 700
-        }
-      },
-      "quantite": 1,
-      "somme": 36000,
-      "id": 1
-    }
-  ]
+  "panier": []
 }

@@ -10,7 +10,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="medium">
   <ion-item *ngFor="let article of filteredList" (click)="gotodetails(article)">
     <ion-thumbnail slot="start">
       <img [src]="article.image[0]" />
