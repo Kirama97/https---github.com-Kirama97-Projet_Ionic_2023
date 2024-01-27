@@ -38,6 +38,9 @@ export class ServiceTechshopService {
      return this.http.post(`${URL_API}/panier`,{article,quantite:1 ,somme:article.prix})
    
   }
+  // ajout-article(article:ARTICLE){
+
+  // }
 
    // Nouvelle méthode pour calculer la somme totale
    getSommeTotale(): Observable<number> {
@@ -55,8 +58,3 @@ export class ServiceTechshopService {
    
 
  }
-
-
-
-
-

@@ -4,16 +4,16 @@
       <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>
     </ion-button>
       <ion-title class="ion-text-center">Details</ion-title>
-    <ion-buttons slot="end">
-      <ion-button >
+    <ion-buttons slot="end"  routerLink="panier">
+      <ion-button>
         <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
       </ion-button>
       <ion-badge>{{indice}}</ion-badge>
-     
     </ion-buttons>
    </ion-toolbar>
 </ion-header>
-<ion-content  *ngIf="article"  >
+
+<ion-content *ngIf="article">
   <ion-card>
     <swiper-container 
     [autoplay]="500"
@@ -84,14 +84,20 @@
   </ion-card>
   <ion-fab slot="fixed" vertical="bottom" horizontal="end" class="ion-padding">
  
-     <ion-button color="primary"  mode="ios" (click)="ajoutcart(article)" > 
+     <ion-button id="open-toast" color="primary"  mode="ios"  (click)="ajoutcart(article)" > 
       Acheter
     </ion-button>
+   
   </ion-fab>
+  
+<div>
+   <ion-toast trigger="open-toast" message="Ajouter au panier" [duration]="1000" icon="cart" color="success" type="ios" position="top" style="top:10%"></ion-toast> 
+ 
 
-
-  <
+</div>
 </ion-content>
+
+
 
 
 

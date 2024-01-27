@@ -68,24 +68,23 @@ deleteall(){
  
 this.monserv.viderPanier().subscribe(() => {
   this.getpanier()
-  // Mettre à jour la somme totale ou effectuer d'autres actions si nécessaire
+ 
   this.monserv.getSommeTotale().subscribe(somme => {
-    // Faire quelque chose avec la nouvelle somme totale
+   
   });
 });
 
   }
 
-  actualise(){
-  window.location.reload()
+
+
+  handleRefresh(event: { target: { complete: () => void; }; }) {
+    setTimeout(() => {
+      this.getpanier()
+      event.target.complete();
+    }, 2000);
   }
 
-  public toastButtons = [
-    {
-      text: 'Dismiss',
-      role: 'cancel',
-      position: 'middle'
-    },
-  ];
+
 
 }

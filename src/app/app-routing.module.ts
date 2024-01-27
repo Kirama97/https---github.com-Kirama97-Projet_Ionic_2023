@@ -37,6 +37,10 @@ const routes: Routes = [
     path: 'panier',
     loadChildren: () => import('./panier/panier.module').then( m => m.PanierPageModule)
   },
+  {
+    path: 'ajout-article',
+    loadChildren: () => import('./ajout-article/ajout-article.module').then( m => m.AjoutArticlePageModule)
+  },
  
 ];
 

@@ -1,9 +1,9 @@
 import { Component,OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-// import { Articles } from '../../modele/list-articles';
+//  import { Articles } from '../../modele/list-articles';
 import { ARTICLE } from '../../modele/article';
 import { CATEGORIE } from 'src/modele/categories';
-// import { Categories } from 'src/modele/list-categorie';
+//  import { Categories } from 'src/modele/list-categorie';
 import {register} from 'swiper/element/bundle';
 import { ServiceTechshopService } from '../service-techshop.service';
 register();

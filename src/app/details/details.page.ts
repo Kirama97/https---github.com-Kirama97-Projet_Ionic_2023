@@ -6,6 +6,7 @@ import {register} from 'swiper/element/bundle';
 import { MenuController, ToastController, ToastOptions } from '@ionic/angular';
 import { ServiceTechshopService } from '../service-techshop.service';
 import { CART } from 'src/modele/cart';
+import { async } from 'rxjs';
 
 
 register();
@@ -18,6 +19,7 @@ register();
 })
 export class DetailsPage implements OnInit {
   isToastOpen = false;
+
   constructor(private route:ActivatedRoute,private router:Router,public menuCtrl:MenuController , private monserv: ServiceTechshopService,private toast : ToastController) { }
   listArticles:ARTICLE[] | undefined
   article:ARTICLE|undefined
@@ -56,16 +58,10 @@ export class DetailsPage implements OnInit {
       this.monserv.ajout(article).subscribe(() => {
         this.getpanier();
         console.log("ajouter")
-   let options:ToastOptions= {
-    message :'Article ajouter au panier',
-    duration : 1500,
-    position:'middle',
-
-   }
-   this.toast.create(options)
         
       })
   }
+
 
   }
 

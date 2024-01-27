@@ -1625,5 +1625,36 @@
       ]
     }
   ],
-  "panier": []
+  "panier": [
+    {
+      "article": {
+        "id": "5",
+        "titre": "Itel-i2163",
+        "description": " Admirez la Itel-i2163 sous tous les angle, Soyez prêt à affronter les surprises d'aujourd'hui grâce à la batterie longue durée à chargement rapide du Itel-i2163, Travaillez en toute confiance lors de vos déplacements et jouez à vos jeux préférés grâce à une batterie qui permet à votre chargeur de faire une pause.",
+        "Marque": "Itel",
+        "image": [
+          "/assets/imgs/Smarphone/Itel-i2163/Itel-i2163.jpg"
+        ],
+        "prix": 5950,
+        "categorie": "Smarphone",
+        "state": "Neuf",
+        "date": "2024-01-01T12:23:44.903Z",
+        "region": "Dakar",
+        "etoile": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "disponibilite": {
+          "disponible": true,
+          "type": "livraison",
+          "frais": 500
+        }
+      },
+      "quantite": 1,
+      "somme": 5950,
+      "id": 1
+    }
+  ]
 }
