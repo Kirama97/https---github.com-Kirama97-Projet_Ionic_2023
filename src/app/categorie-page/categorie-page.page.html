@@ -14,13 +14,20 @@
 </ion-header>
 
 <ion-content>
-  <ion-segment value="segment" scrollable  class="ion-padding" >
+  <div class="categorie">
+    <ion-button class="btcategorie" *ngFor="let Categories of listCategories" (click)="gotocategorie(Categories)" mode="ios" fill="clear" >
+      <ion-text color="primary">
+        <p>{{Categories.titre}}</p>
+       </ion-text>
+    </ion-button>
+  </div>
+  <!-- <ion-segment value="segment" scrollable  class="ion-padding" >
     <ion-segment-button *ngFor="let Categories of listCategories" (click)="gotocategorie(Categories)" mode="ios" fill="clear" >
       <ion-text color="primary">
        <p>{{Categories.titre}}</p>
       </ion-text>
     </ion-segment-button>
-</ion-segment> 
+</ion-segment>  -->
 
 <ion-card class="blocvideo"  scrollable="true" id="card2">
   <swiper-container  [autoplay]="1500" 

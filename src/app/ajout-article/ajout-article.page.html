@@ -1,21 +1,89 @@
-<ion-header [translucent]="true">
-  <ion-toolbar  color="primary">
-    <ion-title>Nouveau-Article</ion-title>
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>TechShop</ion-title>
     <ion-buttons slot="end">
       <ion-button slot="icon-only">
-        <ion-icon  name=""></ion-icon>
+        <ion-icon name=""></ion-icon>
       </ion-button>
       <ion-button>
         <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
+    
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">ajout-article</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" >
+   <ion-card>
+    <ion-card-header>
+      <ion-title>New Article</ion-title>
+    </ion-card-header>
+    <ion-card-content>
+      
+
+      <form  #f="ngForm" novalidate (ngSubmit)="create(f.value)"> 
+        <ion-list lines="full" class="ion-no-margin ion-no-padding">
+          <ion-item>
+      
+            <ion-input label="titre" aria-label="titre" name="titre" required  type="text" [(ngModel)]="New.titre" ></ion-input>
+          </ion-item>
+
+          <ion-item>
+      
+            <ion-input label="Marque" name="marque" aria-label="marque" required type="text"  [(ngModel)]="New.marque"  ></ion-input>
+          </ion-item>
+          <ion-item>
+  
+            <ion-input label="Prix en cfa" aria-label="prix" required type="number"  [(ngModel)]="New.prix"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-select label="Region" placeholder="region"  [(ngModel)]="New.region" required>
+              <ion-select-option value="dakar">Dakar</ion-select-option>
+              <ion-select-option value="thies">Thies</ion-select-option>
+              <ion-select-option value="mbour">Mbour</ion-select-option>
+              <ion-select-option value="diourbel">Diourbel</ion-select-option>
+              <ion-select-option value="st_louis">St_louis</ion-select-option>
+            </ion-select>
+          </ion-item>
+          <ion-item>
+            
+            <ion-select label="State" placeholder="State"  [(ngModel)]="New.state" required>
+              <ion-select-option value="occasion">Occasion</ion-select-option>
+              <ion-select-option value="neuf">Neuf</ion-select-option>
+         
+            </ion-select>
+          </ion-item>
+          <ion-item>
+            <ion-select label="Categorie" placeholder="categorie"  [(ngModel)]="New.categorie" required>
+              <ion-select-option value="smarphone">Smarphone</ion-select-option>
+              <ion-select-option value="electronique">Electronique</ion-select-option>
+              <ion-select-option value="electromenage">Electromenage</ion-select-option>
+              <ion-select-option value="mode">Mode</ion-select-option>
+              <ion-select-option value="sport">Sport</ion-select-option>
+            </ion-select>
+          </ion-item>
+          <ion-item>
+            <ion-input label="Date" type="date"  [(ngModel)]="New.date" required></ion-input>
+          </ion-item>
+      
+
+            <ion-item>
+            <input type="file" label="image"  [(ngModel)]="New.image" required="" >
+          </ion-item>
+       
+
+          <ion-item>
+            <ion-textarea label="Description"  [(ngModel)]="New.description" required>
+            
+            </ion-textarea>
+          </ion-item>
+        </ion-list>
+
+        <!-- <div class="ion-padding"> -->
+          <ion-button expand="block" type="submit" [disabled]="!f.valid"  class="ion-text-wrap ion-no-margin"  >Create account</ion-button>
+        <!-- </div> -->
+       </form>
+    </ion-card-content>
+   </ion-card>
+  
 </ion-content>
