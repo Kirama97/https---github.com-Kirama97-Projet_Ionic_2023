@@ -4,6 +4,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ARTICLE, disponibilite } from 'src/modele/article';
 import { ServiceTechshopService } from '../service-techshop.service';
 import { Camera, CameraResultType, CameraSource, GalleryImageOptions, GalleryPhotos } from '@capacitor/camera';
+import { DomSanitizer } from '@angular/platform-browser';
+import { Filesystem, Directory, Encoding } from '@capacitor/filesystem';
+
+
+ 
 
 
 @Component({
@@ -17,7 +22,8 @@ New :ARTICLE;
 listArticles:ARTICLE[] =[];
 article:ARTICLE|undefined 
   tableauImages: any;
-constructor(private serv :ServiceTechshopService) { 
+  imageSource :any ;
+constructor(private serv :ServiceTechshopService, private domSanitizer :  DomSanitizer) { 
   
   this.New = {} as ARTICLE
   this.New.disponibilite= {} as disponibilite 
@@ -25,10 +31,11 @@ constructor(private serv :ServiceTechshopService) {
   this.New.etoile=[1,2,3]
 
 }
-    
-  ngOnInit() {
-   
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
   }
+    
+ 
 
   create(New: ARTICLE){
     this.serv.newArticle(New).subscribe(()=>{
@@ -37,69 +44,59 @@ constructor(private serv :ServiceTechshopService) {
   }
 
 
-  // async ajoutimage() {
-  //    const image = await Camera.getPhoto({
-  //      quality: 90,
-  //      allowEditing: false,
-  //      resultType: CameraResultType.Uri,
-  //      source: CameraSource.Photos,
-  //    });
-  //   var imageUrl = image.format
- 
-  //    // Utilisez 'image.webPath' pour afficher la photo dans votre application
-  //    // Par exemple, vous pouvez l'afficher dans une balise <img> dans le HTML.
-  //    console.log('Chemin de l\'image : ', imageUrl)
- 
-  // }
+ajoutimage = async () =>{
+  const image = await Camera.getPhoto({
+    quality:90, 
+    allowEditing:true,
+     resultType:CameraResultType.Uri,
+    source:CameraSource.Prompt,
+    saveToGallery:true
+  });
 
-  async ajoutimage() {
-    try {
-      const image = await Camera.getPhoto({
-        quality: 90,
-        allowEditing: false,
-        resultType: CameraResultType.Uri,
-        source: CameraSource.Photos,
-      });
-  
-      // Obtenez le chemin web et la source de l'image
-      const cheminWeb :string | undefined= image.dataUrl;
-  
-  
-      // Créez un objet PhotoAvecSource pour stocker ces informations
-      
-  
-      // Ajoutez l'objet à votre tableau d'objets
-      // Assurez-vous que votre tableau existe en tant que propriété de classe
-      // this.New.image.push(cheminWeb);
-  
-      // Utilisez 'image.webPath' pour afficher la photo dans votre application
-      // Par exemple, vous pouvez l'afficher dans une balise <img> dans le HTML.
-      console.log(cheminWeb);
- 
-    } catch (erreur) {
-      // Gérez les erreurs ici
-      console.error('Erreur lors de la récupération de l\'image :', erreur);
-    }
-  
+  this.imageSource = this.domSanitizer.bypassSecurityTrustUrl(image.webPath? image.webPath : "");
+  console.log(this.imageSource);  
+
+   // Obtenez le chemin web et la source de l'image
+   const cheminWeb: string | undefined = this.imageSource
+
+   // Sauvegardez l'image dans le dossier "images"
+   const savedImage = await this.saveImage(cheminWeb);
+
+   // Ajoutez le chemin de l'image sauvegardée au tableau New.image
+   this.New.image.push(savedImage);
+
+   // Affichez le chemin web de l'image dans la console
+   console.log('Chemin de l\'image : ', cheminWeb);
 
 
+ }
+ getphoto(){
+  return this.imageSource;
+}
 
-  // async ajoutimage() {
+ // Fonction pour sauvegarder l'image dans le dossier "images"
+async saveImage(imageSource: string | undefined): Promise<string> {
+  if (imageSource) {
+    const fileName = new Date().getTime() + '.jpeg'; // Nom du fichier basé sur la date actuelle
+    const savedImage = await Filesystem.writeFile({
+      path: '/assets/imgs' + fileName,
+      data: imageSource,
+      directory: Directory.Data,
+      encoding: Encoding.UTF8,
+    });
 
-  //   const image = await Camera.getPhoto({
-  //     quality: 90,
-  //     allowEditing: false,
-  //     resultType: CameraResultType.Uri,
-  //     source: CameraSource.Photos,
-  //   });
-  //  var imageUrl = image.webPath
-  //  SVGImageElement.arguments = imageUrl;
-
-  //   // Utilisez 'image.webPath' pour afficher la photo dans votre application
-  //   // Par exemple, vous pouvez l'afficher dans une balise <img> dans le HTML.
-  //   console.log('Chemin de l\'image : ', imageUrl)
- 
-   }
+    // Renvoie le chemin complet de l'image sauvegardée
+    return savedImage.uri;
+  } else {
+    throw new Error('Chemin web de l\'image non disponible.');
+  }
 
  
+
+
+
+
+}
+
+
 }

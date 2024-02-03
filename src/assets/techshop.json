@@ -657,26 +657,6 @@
         "type": "livraison",
         "frais": 500
       }
-    },
-    {
-      "id": "b05b",
-      "disponibilite": {
-        "type": "Livraison",
-        "frais": "500",
-        "disponible": true
-      },
-      "image": [],
-      "etoile": [
-        1
-      ],
-      "titre": "Airpode Max ",
-      "Marque": "Apple",
-      "prix": 25000,
-      "region": "thies",
-      "state": "neuf",
-      "categorie": "electronique",
-      "date": "2024-02-03",
-      "description": "Des casque de ouf avec un sono plein de basse"
     }
    
   ],
