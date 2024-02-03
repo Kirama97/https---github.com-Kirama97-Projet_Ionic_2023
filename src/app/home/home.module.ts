@@ -7,6 +7,7 @@ import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
 import { DetailsPage } from '../details/details.page';
 import { DetailsPageModule } from '../details/details.module';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { DetailsPageModule } from '../details/details.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    RouterModule.forChild([{ path: '', component: HomePage }])
    
   
   ],

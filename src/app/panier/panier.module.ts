@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { PanierPageRoutingModule } from './panier-routing.module';
 
 import { PanierPage } from './panier.page';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PanierPageRoutingModule
+    PanierPageRoutingModule,
+    RouterModule.forChild([{ path: '', component: PanierPage }])
   ],
   declarations: [PanierPage]
 })

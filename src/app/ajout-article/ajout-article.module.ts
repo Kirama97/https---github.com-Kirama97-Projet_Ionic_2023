@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { AjoutArticlePageRoutingModule } from './ajout-article-routing.module';
 
 import { AjoutArticlePage } from './ajout-article.page';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { AjoutArticlePage } from './ajout-article.page';
     IonicModule,
     AjoutArticlePageRoutingModule,
     ReactiveFormsModule,
+    RouterModule.forChild([{ path: '', component: AjoutArticlePage }])
   ],
   declarations: [AjoutArticlePage]
 })

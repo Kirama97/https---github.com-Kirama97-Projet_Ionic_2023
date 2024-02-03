@@ -6,6 +6,7 @@ import { IonicModule } from '@ionic/angular';
 import { DetailsPageRoutingModule } from './details-routing.module';
 import { DetailsPage } from './details.page';
 import { FrancPipe } from '../franc.pipe';
+import { RouterModule } from '@angular/router';
 
  
 
@@ -15,6 +16,7 @@ import { FrancPipe } from '../franc.pipe';
     FormsModule,
     IonicModule,
     DetailsPageRoutingModule,
+    RouterModule.forChild([{ path: '', component: DetailsPage }])
 
    
   ],

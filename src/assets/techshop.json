@@ -657,11 +657,32 @@
         "type": "livraison",
         "frais": 500
       }
+    },
+    {
+      "id": "b05b",
+      "disponibilite": {
+        "type": "Livraison",
+        "frais": "500",
+        "disponible": true
+      },
+      "image": [],
+      "etoile": [
+        1
+      ],
+      "titre": "Airpode Max ",
+      "Marque": "Apple",
+      "prix": 25000,
+      "region": "thies",
+      "state": "neuf",
+      "categorie": "electronique",
+      "date": "2024-02-03",
+      "description": "Des casque de ouf avec un sono plein de basse"
     }
+   
   ],
   "categorie": [
     {
-      "id": 1,
+      "id": "1",
       "titre": "Téléphones",
       "description": "Rassemble des articles de telephones et de tablette de tout genre .",
       "icone": "phone-portrait-outline",
@@ -857,7 +878,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "titre": "Electronique",
       "description": "Rassemble des materieles electronique de marque original .",
       "icone": "hardware-chip-outline",
@@ -1050,7 +1071,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "titre": "Electroménager",
       "description": "Des electromenager pour votre maison et Bureau",
       "icone": "storefront-outline",
@@ -1214,7 +1235,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": "4",
       "titre": "Informatique",
       "description": "Des ordinateurs ,des Souris ,des Claviers et aurtres accesoire ",
       "icone": "desktop-outline",
@@ -1351,7 +1372,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": "5",
       "titre": "Mode",
       "description": "Des articles de model (chaussure ,t-shirt ,pantalon ,chemise et autres )",
       "icone": "shirt-outline",
@@ -1488,7 +1509,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": "6",
       "titre": "Articles de Sport",
       "description": "Tout pour etre à laise dans vos sales de sport",
       "icone": "barbell-outline",

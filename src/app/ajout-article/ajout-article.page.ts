@@ -1,6 +1,8 @@
 
 import { Component, OnInit } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ARTICLE, disponibilite } from 'src/modele/article';
+import { ServiceTechshopService } from '../service-techshop.service';
 
 
 @Component({
@@ -9,12 +11,16 @@ import { ReactiveFormsModule } from '@angular/forms';
   styleUrls: ['./ajout-article.page.scss'],
 })
 export class AjoutArticlePage implements OnInit {
-New :any; 
-articleForm: any;
+New :ARTICLE; 
 
-constructor() { 
+listArticles:ARTICLE[] =[];
+article:ARTICLE|undefined 
+constructor(private serv :ServiceTechshopService) { 
   
-  this.New = {};
+  this.New = {} as ARTICLE
+  this.New.disponibilite= {} as disponibilite 
+  this.New.image = [];
+  this.New.etoile=[1,2,3]
 
 }
     
@@ -22,8 +28,13 @@ constructor() {
    
   }
 
-  create(New: any){
-    console.log("new =" , this.New);
+  create(New: ARTICLE){
+    this.serv.newArticle(New).subscribe(()=>{
+      console.log("new =" , this.New);
+    })
+  }
+
+  ajoutimage(){
     
   }
 }

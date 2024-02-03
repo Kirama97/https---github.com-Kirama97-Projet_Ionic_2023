@@ -1,22 +1,22 @@
 
-export class ARTICLE {
-    id:string | undefined;
-    titre : string | undefined;
-    Marque:string|undefined
-    description:string | undefined;
-    image:string[] | any; 
-    prix : number | undefined ; 
-    categorie:string | undefined;
-    state : string| undefined;
-    date : Date| undefined;
-    region:string | undefined;
-    etoile:number[]| undefined;
-    disponibilite : disponibilite| undefined;
+export interface ARTICLE {
+    id:string ;
+    titre : string ;
+    Marque:string
+    description:string ;
+    image:string[] ; 
+    prix : number  ; 
+    categorie:string ;
+    state : string;
+    date : Date;
+    region:string ;
+    etoile:number[];
+    disponibilite: disponibilite;
 
 }
 
-export class disponibilite {
-    disponible :boolean | undefined;
-    type :string | undefined;
-    frais ?:number 
+export interface disponibilite {
+    disponible :boolean ;
+    type :string ;
+    frais :number 
 }

@@ -31,9 +31,8 @@
           <h2>{{article.article.titre}}</h2>
           <p> Unitaire {{article.article.prix}} CFA</p>
         </ion-label>
-        <ion-button id="open-toast"  color="danger" (click)="deletearticle(article)"> 
-     
-          <ion-icon  name="close-outline"></ion-icon>
+        <ion-button  color="danger" (click)="deletearticle(article)" > 
+          <ion-icon   name="close-outline"></ion-icon>
       </ion-button> 
 
       </ion-item>
@@ -42,8 +41,8 @@
           <p>Somme : {{article?.somme}} CFA</p>
         </ion-label>
         <ion-buttons slot="end">
-          <ion-button>
-           <ion-icon slot="icon-only" name="add-outline"></ion-icon>
+          <ion-button id="open-toast">
+           <ion-icon slot="icon-only"  name="add-outline"></ion-icon>
           </ion-button>
           <p>{{article?.quantite}}</p>
           <ion-button>
@@ -53,17 +52,19 @@
        </ion-buttons>
       </ion-item>
      </ion-list>
-     
+     <ion-toast trigger="open-toast" message="supprimer" [duration]="1000" icon="cart" color="danger" type="ios" position="top" style="top:7%"></ion-toast>
   </ion-card>
 
   <ion-fab   slot="fixed" vertical="bottom" horizontal="center" class="ion-padding">
     <ion-button   mode="ios" > 
       Commander {{sommetotal}} cfa
      </ion-button>
-     <ion-button   id="open-toast" color="danger"  mode="ios" (click)="deleteall()"> 
+     <ion-button   color="danger"  mode="ios" (click)="deleteall()"> 
       <ion-icon name="trash-outline"></ion-icon>
     </ion-button>
  </ion-fab>
- <ion-toast trigger="open-toast" message="supprimer" [duration]="1000" icon="cart" color="danger" type="ios" position="top" style="top:10%"></ion-toast>
- </ion-content>
+ 
+
+ 
+</ion-content>
  

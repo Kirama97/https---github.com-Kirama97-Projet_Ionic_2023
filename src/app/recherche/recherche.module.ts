@@ -9,13 +9,15 @@ import { IonicModule } from '@ionic/angular';
 import { RecherchePageRoutingModule } from './recherche-routing.module';
 
 import { RecherchePage } from './recherche.page';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RecherchePageRoutingModule
+    RecherchePageRoutingModule,
+    RouterModule.forChild([{ path: '', component: RecherchePage }])
   
   ],
   declarations: [RecherchePage]

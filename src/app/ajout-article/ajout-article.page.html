@@ -5,7 +5,7 @@
       <ion-button slot="icon-only">
         <ion-icon name=""></ion-icon>
       </ion-button>
-      <ion-button>
+      <ion-button >
         <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -14,23 +14,26 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" >
+  <!-- <form  #f="ngForm" novalidate (ngSubmit)="create(f.value)">  -->
    <ion-card>
-    <ion-card-header>
-      <ion-title>New Article</ion-title>
+    <ion-card-header color="light">
+      <ion-title style="margin: 0 auto;">Ajouter une image</ion-title>
+      <ion-button style="width: 75px; margin:0 auto;margin-top:50px" size="default" shape="round" mode="ios" color="primary" (click)="ajoutimage()" >
+        <ion-icon  slot="icon-only" name="camera-outline"></ion-icon>
+      </ion-button>
     </ion-card-header>
     <ion-card-content>
       
 
-      <form  #f="ngForm" novalidate (ngSubmit)="create(f.value)"> 
+      
         <ion-list lines="full" class="ion-no-margin ion-no-padding">
           <ion-item>
-      
-            <ion-input label="titre" aria-label="titre" name="titre" required  type="text" [(ngModel)]="New.titre" ></ion-input>
+            <ion-input label="Titre" aria-label="titre" name="titre" required="true"  type="text" [(ngModel)]="New.titre" ></ion-input>
           </ion-item>
 
           <ion-item>
       
-            <ion-input label="Marque" name="marque" aria-label="marque" required type="text"  [(ngModel)]="New.marque"  ></ion-input>
+            <ion-input label="Marque" name="marque" aria-label="marque" required type="text"  [(ngModel)]="New.Marque"  ></ion-input>
           </ion-item>
           <ion-item>
   
@@ -56,6 +59,7 @@
           <ion-item>
             <ion-select label="Categorie" placeholder="categorie"  [(ngModel)]="New.categorie" required>
               <ion-select-option value="smarphone">Smarphone</ion-select-option>
+              <ion-select-option value="smarphone">Informatique</ion-select-option>
               <ion-select-option value="electronique">Electronique</ion-select-option>
               <ion-select-option value="electromenage">Electromenage</ion-select-option>
               <ion-select-option value="mode">Mode</ion-select-option>
@@ -65,25 +69,42 @@
           <ion-item>
             <ion-input label="Date" type="date"  [(ngModel)]="New.date" required></ion-input>
           </ion-item>
-      
-
-            <ion-item>
-            <input type="file" label="image"  [(ngModel)]="New.image" required="" >
+          
+          <ion-item>
+            <ion-label floating>Mode d'acquisition</ion-label>
+            <ion-select [(ngModel)]="New.disponibilite.type">
+                <ion-select-option value="Livraison">Livraison</ion-select-option>
+                <ion-select-option value="En magasin">En magasin</ion-select-option>
+                <ion-select-option value="Main">Main a main</ion-select-option>
+            </ion-select>
+           
           </ion-item>
-       
+          <ion-item *ngIf="New.disponibilite.type ==='Livraison'">
+            <ion-label floating>Frais de livraison</ion-label>
+            <ion-select [(ngModel)]="New.disponibilite.frais">
+              <ion-select-option value="500">500 cfa</ion-select-option>
+              <ion-select-option value="1000">1000 cfa</ion-select-option>
+              <ion-select-option value="1500">1500 cfa</ion-select-option>
+              <ion-select-option value="2000">2000 cfa</ion-select-option>
+          </ion-select>
+          </ion-item>
+          <ion-item>
+            <ion-toggle [(ngModel)]="New.disponibilite.disponible">Est-il disponible Maintenant</ion-toggle> 
+          </ion-item>
+
 
           <ion-item>
             <ion-textarea label="Description"  [(ngModel)]="New.description" required>
-            
             </ion-textarea>
           </ion-item>
         </ion-list>
 
         <!-- <div class="ion-padding"> -->
-          <ion-button expand="block" type="submit" [disabled]="!f.valid"  class="ion-text-wrap ion-no-margin"  >Create account</ion-button>
+          <!-- <ion-button expand="block" type="submit" [disabled]="!f.valid"  class="ion-text-wrap ion-no-margin"  >Create account</ion-button> -->
+          <ion-button   [disabled]="!New" expand="block" (click)="create(New)"  class="ion-text-wrap ion-no-margin"  >Create account</ion-button>
         <!-- </div> -->
-       </form>
+     
     </ion-card-content>
    </ion-card>
-  
+  <!-- </form> -->
 </ion-content>

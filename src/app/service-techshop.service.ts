@@ -5,7 +5,8 @@ import { ARTICLE } from 'src/modele/article';
 import { CART } from 'src/modele/cart';
 import { CATEGORIE } from 'src/modele/categories';
 
-const URL_API ="http://localhost:3000";
+//  const URL_API ="https://32b1-196-207-227-11.ngrok-free.app";
+  const URL_API ="http://localhost:3000";
 
 @Injectable({
   providedIn: 'root'
@@ -37,6 +38,11 @@ export class ServiceTechshopService {
    ajout(article:ARTICLE){
      return this.http.post(`${URL_API}/panier`,{article,quantite:1 ,somme:article.prix})
    
+  }
+
+  newArticle(New :ARTICLE){
+    return this.http.post(`${URL_API}/article`,(New))
+
   }
   // ajout-article(article:ARTICLE){
 

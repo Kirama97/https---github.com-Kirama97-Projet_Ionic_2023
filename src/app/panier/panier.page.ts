@@ -47,13 +47,7 @@ export class PanierPage implements OnInit {
     this.router.navigate(['/home']);
   }
 
-  // gettotal(){
-  //   this.panier.map((data:CART)=>{
-  //     this.grandtotal +=data.somme
-  //     console.log(this.grandtotal)
-  //   })
 
-  // }
   deletearticle(article:CART){
    
     console.log(article)
@@ -76,8 +70,6 @@ this.monserv.viderPanier().subscribe(() => {
 
   }
 
-
-
   handleRefresh(event: { target: { complete: () => void; }; }) {
     setTimeout(() => {
       this.getpanier()
@@ -85,6 +77,25 @@ this.monserv.viderPanier().subscribe(() => {
     }, 2000);
   }
 
+
+  // public alertButtons = [
+  //   {
+  //     text: 'Cancel',
+  //     role: 'cancel',
+  //     handler: () => {
+  //       console.log('Alert canceled');
+  //     },
+  //   },
+  //   {
+  //     text: 'OK',
+  //     role: 'confirm',
+  //     handler: () => {
+  //       console.log('Alert confirmed');
+  //     },
+  //   },
+  // ];
+
+  
 
 
 }
