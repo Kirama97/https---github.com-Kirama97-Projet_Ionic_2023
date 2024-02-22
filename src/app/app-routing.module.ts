@@ -38,6 +38,10 @@ const routes: Routes = [
     path: 'ajout-article',
     loadChildren: () => import('./ajout-article/ajout-article.module').then( m => m.AjoutArticlePageModule)
   },
+  {
+    path: 'espace-membre',
+    loadChildren: () => import('./espace-membre/espace-membre.module').then( m => m.EspaceMembrePageModule)
+  },
  
  
 ];
