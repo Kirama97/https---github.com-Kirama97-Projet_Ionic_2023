@@ -1,1 +1,25 @@
+@import "~bootstrap/dist/css/bootstrap.css";
 
+ion-card{
+    margin-bottom:100px ;
+}
+ion-card-header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+  ion-title{
+    text-align: center;
+     height: 20px;
+     margin-top: 20px;
+     color: rgba(255, 166, 0, 0.705);
+  }
+  ion-button{
+    margin :0 auto;
+  }
+}
+
+.invalid-feedback{
+  color: red;
+}

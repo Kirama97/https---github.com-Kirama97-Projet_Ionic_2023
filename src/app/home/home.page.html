@@ -12,10 +12,17 @@
         </ion-buttons>
        </ion-toolbar>
     </ion-header>
+
+
     <ion-content>
+      <!-- permet l'actualisation de cette page -->
+      <ion-refresher slot="fixed" [pullFactor]="0.5" [pullMin]="100" [pullMax]="200" (ionRefresh)="handleRefresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+      </ion-refresher>
+    
 
     <ion-card class="blocvideo"  scrollable="true" >
-         
+      
                 <swiper-container  [autoplay]="1000"
                 [loop]="true">
                   <swiper-slide>
@@ -57,6 +64,7 @@
         <ion-item-divider color="primary" >
           Nos articles disponibles
         </ion-item-divider>
+
         <ion-card class="listcategorie">
           <div ion-content class="contenu_smarphone" >
             <div class="smarphone" *ngFor="let article of listArticles" (click)="gotodetails(article)">
@@ -66,9 +74,11 @@
             </div>
            </div>
         </ion-card>
+
            <ion-item-divider color="success" >
             En Promo 24H/24
           </ion-item-divider>
+
           <ion-card class="blocvideo"  scrollable="true" id="card2">
             <swiper-container  [autoplay]="1500" 
             [loop]="true">
@@ -81,5 +91,7 @@
           </swiper-container>
           
       </ion-card >
+
+    </ion-content>
 
  

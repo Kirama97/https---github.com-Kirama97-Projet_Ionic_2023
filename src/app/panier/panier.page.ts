@@ -4,6 +4,7 @@ import { MenuController } from '@ionic/angular';
 import { ARTICLE } from 'src/modele/article';
 import { ServiceTechshopService } from '../service-techshop.service';
 import { CART } from 'src/modele/cart';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-panier',
@@ -37,6 +38,8 @@ export class PanierPage implements OnInit {
    } )
   }
 
+  // la somme total de la commande
+
   totalcommande():void{
     this.monserv.getSommeTotale().subscribe(somme =>{
     this.sommetotal =somme
@@ -47,6 +50,7 @@ export class PanierPage implements OnInit {
     this.router.navigate(['/home']);
   }
 
+// supression d'un article
 
   deletearticle(article:CART){
    
@@ -58,17 +62,14 @@ export class PanierPage implements OnInit {
     })
   }
 
+
+// comme j'ai pas en encore de solution pour vider le tableau ,je vais initialisé un tableau vide,mais reapparait apres actualisation
+
 deleteall(){
- 
-this.monserv.viderPanier().subscribe(() => {
-  this.getpanier()
- 
-  this.monserv.getSommeTotale().subscribe(somme => {
-   
-  });
-});
+   this.panier= [];
 
   }
+
 
   handleRefresh(event: { target: { complete: () => void; }; }) {
     setTimeout(() => {
@@ -78,22 +79,6 @@ this.monserv.viderPanier().subscribe(() => {
   }
 
 
-  // public alertButtons = [
-  //   {
-  //     text: 'Cancel',
-  //     role: 'cancel',
-  //     handler: () => {
-  //       console.log('Alert canceled');
-  //     },
-  //   },
-  //   {
-  //     text: 'OK',
-  //     role: 'confirm',
-  //     handler: () => {
-  //       console.log('Alert confirmed');
-  //     },
-  //   },
-  // ];
 
   
 

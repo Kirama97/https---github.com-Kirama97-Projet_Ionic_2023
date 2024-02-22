@@ -14,6 +14,7 @@
 </ion-header>
 
 <ion-content>
+  <!-- avoir les noms de categorie en horizontal -->
   <div class="categorie">
     <ion-button class="btcategorie" *ngFor="let Categories of listCategories" (click)="gotocategorie(Categories)" mode="ios" fill="clear" >
       <ion-text color="primary">
@@ -21,14 +22,8 @@
        </ion-text>
     </ion-button>
   </div>
-  <!-- <ion-segment value="segment" scrollable  class="ion-padding" >
-    <ion-segment-button *ngFor="let Categories of listCategories" (click)="gotocategorie(Categories)" mode="ios" fill="clear" >
-      <ion-text color="primary">
-       <p>{{Categories.titre}}</p>
-      </ion-text>
-    </ion-segment-button>
-</ion-segment>  -->
-
+ 
+<!-- une card pour des annimation creer avec canva -->
 <ion-card class="blocvideo"  scrollable="true" id="card2">
   <swiper-container  [autoplay]="1500" 
   [loop]="true">
@@ -42,12 +37,8 @@
 
 </ion-card >
 
-
-
-
   <div class="contentbar">
     <ion-list>
-  
      <ion-item  *ngFor="let categories of Onecategorie?.liste_articles " (click)="gotodetails(categories)">
        <ion-thumbnail slot="start">
          <img [src]="categories.image[0]" />
@@ -67,5 +58,4 @@
     </div>
 
 
-   
 </ion-content>

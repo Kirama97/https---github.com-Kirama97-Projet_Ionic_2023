@@ -42,9 +42,13 @@ export class DetailsPage implements OnInit {
    
   
   }
+
+  // retourner dans la page list-article
   Back(){
     this.router.navigate(['/list-article']);
   }
+
+  // la recuperation des article de notre panier
   getpanier(){
     this.monserv.getCart().subscribe((data:CART[]) =>{
       this.panier =data;
@@ -53,6 +57,7 @@ export class DetailsPage implements OnInit {
 
    } )
   }
+  // l'ajout d'un article au panier 
    ajoutcart(article:ARTICLE) : void{
 
       this.monserv.ajout(article).subscribe(() => {

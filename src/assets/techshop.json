@@ -657,8 +657,59 @@
         "type": "livraison",
         "frais": 500
       }
+    },
+    {
+      "id": "b729",
+      "disponibilite": {
+        "type": "Livraison",
+        "frais": "1000",
+        "disponible": true
+      },
+      "image": [
+        "/assets/imgs/test.png",
+        "/assets/imgs/test.png",
+        "/assets/imgs/test.png"
+      ],
+      "etoile": [
+        1,
+        2,
+        3
+      ],
+      "titre": "Casque Boss X1",
+      "Marque": "Bose",
+      "prix": 150000,
+      "region": "thies",
+      "state": "neuf",
+      "categorie": "electronique",
+      "date": "2024-02-16",
+      "description": "Bose est une marque qui innove de jour en jour en confectionnant des matériels de qualités"
+    },
+    {
+      "id": "26af",
+      "disponibilite": {
+        "disponible": true,
+        "type": "Livraison",
+        "frais": "500"
+      },
+      "image": [
+        "/assets/imgs/test.png",
+        "/assets/imgs/test.png",
+        "/assets/imgs/test.png"
+      ],
+      "etoile": [
+        1,
+        2,
+        3
+      ],
+      "titre": "Boitier disc hhd 3.0",
+      "Marque": "Seagate",
+      "prix": 3500,
+      "region": "mbour",
+      "state": "neuf",
+      "categorie": "electronique",
+      "date": "2024-02-15",
+      "description": "Une bonne boitier pour mieu stocker vos données"
     }
-   
   ],
   "categorie": [
     {

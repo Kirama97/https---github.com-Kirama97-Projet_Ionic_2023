@@ -1,12 +1,6 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-searchbar placeholder="recherche article" slot="start" [debounce]="1000" (ionInput)="recherche($event)"></ion-searchbar>
-    <ion-buttons slot="end">
-      <ion-button>
-        <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
-      </ion-button>
-      <ion-badge>0</ion-badge>
-    </ion-buttons>
+    <ion-searchbar show-clear-button="always" clear-icon="trash-bin" style="margin-top:15px" placeholder="recherche article" slot="start" [debounce]="1000" (ionInput)="recherche($event)"></ion-searchbar>
   </ion-toolbar>
 </ion-header>
 

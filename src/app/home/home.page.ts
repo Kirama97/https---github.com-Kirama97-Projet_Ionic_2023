@@ -1,9 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-//  import { Articles } from '../../modele/list-articles';
 import { ARTICLE } from '../../modele/article';
 import { CATEGORIE } from 'src/modele/categories';
-//  import { Categories } from 'src/modele/list-categorie';
 import {register} from 'swiper/element/bundle';
 import { ServiceTechshopService } from '../service-techshop.service';
 register();
@@ -41,20 +39,35 @@ article:ARTICLE|undefined
 
   ngOnInit() {
 
-    this.monserv.getcategorie().subscribe((data:CATEGORIE[]) =>{
-      this.listCategories = data
-      console.table(data)
-    } )
-
-    this.monserv.getarticle().subscribe((data1:ARTICLE[]) =>{
-      this.listArticles =data1
-    } )
+ this.getarticle();
+ this.getcategorie()
    
   }
-  handleInput(){
+  // categorie
 
-  }
+getcategorie(){
+  this.monserv.getcategorie().subscribe((data:CATEGORIE[]) =>{
+    this.listCategories = data
+    console.table(data)
+  } )
 
+}
+// les articles
+
+getarticle(){
+  this.monserv.getarticle().subscribe((data1:ARTICLE[]) =>{
+    this.listArticles =data1
+  } )
+}
+
+// actualisation de la age 
+
+  handleRefresh(event: { target: { complete: () => void; }; }) {
+    setTimeout(() => {
+      this.getarticle();
+      event.target.complete();
+    }, 2000);
+  } 
 }
 
 

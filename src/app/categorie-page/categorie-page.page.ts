@@ -17,6 +17,7 @@ export class CategoriePagePage implements OnInit {
 
 
   constructor(private route:ActivatedRoute,private router:Router, private monserv :ServiceTechshopService) { }
+
   listCategories : CATEGORIE[]= []; //tableau des categorie
   Onecategorie:CATEGORIE|undefined; //un categorie
   listArticles : ARTICLE[] = [];
@@ -37,14 +38,19 @@ if (categorieId) {
 } )
 
   }
+
+  // la fonction back pour retourner dans la page list-article
   Back(){
     this.router.navigate(['/list-article']);
   }
-
+ 
+    // la fonction de voir les details d'un article ,quand je click sur un article il me dirige sur les details de cette article en passant en parametre l'article en question
   gotodetails(article:ARTICLE) {
     this.router.navigate(['/details',article]);
     
    }
+  //  meme procesus pour voir les article d'un categorie
+  
    gotocategorie(Categories:CATEGORIE){
     console.table(Categories);
      this.router.navigate(['/categorie-page',Categories]);

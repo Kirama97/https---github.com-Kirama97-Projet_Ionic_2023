@@ -11,7 +11,6 @@
   /** primary **/
   --ion-color-primary:#ffa500;
   // --ion-color-primary:rgba(255, 166, 0, 0.993);
-  --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
   --ion-color-primary-shade: #3171e0;
@@ -91,7 +90,7 @@
    */
 
   body {
-    --ion-color-primary: #428cff;
+    --ion-color-primary: #ffa500;
     --ion-color-primary-rgb: 66,140,255;
     --ion-color-primary-contrast: #ffffff;
     --ion-color-primary-contrast-rgb: 255,255,255;
@@ -161,7 +160,7 @@
    */
 
   .ios body {
-    --ion-background-color: #000000;
+    --ion-background-color:#ffa500;
     --ion-background-color-rgb: 0,0,0;
 
     --ion-text-color: #ffffff;

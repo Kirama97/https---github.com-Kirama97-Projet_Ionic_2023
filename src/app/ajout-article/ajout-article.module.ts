@@ -8,6 +8,7 @@ import { AjoutArticlePageRoutingModule } from './ajout-article-routing.module';
 
 import { AjoutArticlePage } from './ajout-article.page';
 import { RouterModule } from '@angular/router';
+import { bootstrapApplication } from '@angular/platform-browser';
 
 @NgModule({
   imports: [

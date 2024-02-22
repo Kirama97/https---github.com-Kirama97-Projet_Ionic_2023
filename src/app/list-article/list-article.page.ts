@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ARTICLE } from 'src/modele/article';
 import { CATEGORIE } from 'src/modele/categories';
-// import { Articles } from 'src/modele/list-articles';
-// import { Categories } from 'src/modele/list-categorie';
 import {register} from 'swiper/element/bundle';
 import { ServiceTechshopService } from '../service-techshop.service';
 register();
@@ -45,12 +43,7 @@ export class ListArticlePage implements OnInit {
      }
     } )
 
-    // this.listCategories = Categories
-    // const categorieId:string|null =this.route.snapshot.paramMap.get('id')
-    // if(categorieId){
-    //   console.log(categorieId);
-    // }
-   
+  
     }
     Back(){
       this.router.navigate(['/home']);

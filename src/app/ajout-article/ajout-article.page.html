@@ -14,50 +14,74 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" >
-  <!-- <form  #f="ngForm" novalidate (ngSubmit)="create(f.value)">  -->
-   <ion-card>
+<form  novalidate (ngSubmit)="savedata(donneeform)" #donneeform="ngForm">
+  <ion-card>
+    <!--*** la fonction ajoutimage permet de recuperer une image en provenance de la camera en utilisant capacitor 
+        ***mon probleme est de sauvegarder limage de l'utlisé pour mon article 
+        *** j'arrive a l'afficher apres capture en bas de mon formulaire
+        *** le probleme en est que le format stocker et le dossier qu'il fixe pour stockage l'image n'est pas accessible  
+    -->
     <ion-card-header color="light">
-      <ion-title style="margin: 0 auto;">Ajouter une image</ion-title>
-      <ion-button style="width: 75px; margin:0 auto;margin-top:50px" size="default" shape="round" mode="ios" color="primary" (click)="ajoutimage()" >
+      <ion-title >Ajouter une image</ion-title>
+      <ion-button  size="default" shape="round" mode="ios" color="primary" (click)="ajoutimage()"  >
         <ion-icon  slot="icon-only" name="camera-outline"></ion-icon>
       </ion-button>
     </ion-card-header>
     <ion-card-content>
       
 
-      
+      <!-- title -->
         <ion-list lines="full" class="ion-no-margin ion-no-padding">
-          <ion-item>
-            <ion-input label="Titre" aria-label="titre" name="titre" required="true"  type="text" [(ngModel)]="New.titre" ></ion-input>
-          </ion-item>
+        
+         
+            <ion-item>
+              <ion-input   class="form-control"  label="Titre" aria-label="titre" name="titre"  type="text" [(ngModel)]="New.titre"  required  minlength="2" #titlevar="ngModel" [ngClass]="{'is-invalid': titlevar.touched && !titlevar.valid }" ></ion-input>
+              <span *ngIf="titlevar.errors" class="invalid-feedback">
+                Donner un titre
+              </span>
+            </ion-item>
 
+        <!-- marque -->
           <ion-item>
-      
-            <ion-input label="Marque" name="marque" aria-label="marque" required type="text"  [(ngModel)]="New.Marque"  ></ion-input>
+            <ion-input  class="form-control" label="Marque" name="Marque" aria-label="marque"  type="text"  [(ngModel)]="New.Marque"  required minlength="2" required #marquevar="ngModel" [ngClass]="{'is-invalid': marquevar.touched && !marquevar.valid }"></ion-input>
+            <span *ngIf="marquevar.errors" class="invalid-feedback">
+              Donner la marque
+            </span>
           </ion-item>
+          <!-- prix -->
           <ion-item>
-  
-            <ion-input label="Prix en cfa" aria-label="prix" required type="number"  [(ngModel)]="New.prix"></ion-input>
+            <ion-input  class="form-control" label="Prix en cfa" aria-label="prix" name="prix" type="number"  [(ngModel)]="New.prix" required minlength="3" #prixvar="ngModel"  [ngClass]="{'is-invalid': prixvar.touched && !prixvar.valid }"></ion-input>
+            <span *ngIf="prixvar.errors" class="invalid-feedback">
+              Donner le prix
+            </span>
           </ion-item>
+          <!-- date -->
           <ion-item>
-            <ion-select label="Region" placeholder="region"  [(ngModel)]="New.region" required>
+            <ion-input  class="form-control" name="date" label="Date" type="date"  [(ngModel)]="New.date" required ></ion-input >
+          </ion-item>
+          <!-- Region -->
+          <ion-item>
+          
+            <ion-select   class="form-control" label="Region" placeholder="region" name="region" [(ngModel)]="New.region" required #regionvar="ngModel" [ngClass]="{'is-invalid': regionvar.touched && !titlevar.valid }">
               <ion-select-option value="dakar">Dakar</ion-select-option>
               <ion-select-option value="thies">Thies</ion-select-option>
               <ion-select-option value="mbour">Mbour</ion-select-option>
               <ion-select-option value="diourbel">Diourbel</ion-select-option>
               <ion-select-option value="st_louis">St_louis</ion-select-option>
             </ion-select>
+           
           </ion-item>
+          <!-- state -->
           <ion-item>
             
-            <ion-select label="State" placeholder="State"  [(ngModel)]="New.state" required>
+            <ion-select  class="form-control" label="State" placeholder="State" name="state"  [(ngModel)]="New.state"  required  #statevar="ngModel" [ngClass]="{'is-invalid': statevar.touched && !statevar.valid }" >
               <ion-select-option value="occasion">Occasion</ion-select-option>
               <ion-select-option value="neuf">Neuf</ion-select-option>
-         
             </ion-select>
           </ion-item>
+          <!-- categorie -->
           <ion-item>
-            <ion-select label="Categorie" placeholder="categorie"  [(ngModel)]="New.categorie" required>
+            <ion-select   class="form-control" label="Categorie" placeholder="categorie" name="categorie" [(ngModel)]="New.categorie" required #categorievar="ngModel" [ngClass]="{'is-invalid': categorievar.touched && !categorievar.valid }">
               <ion-select-option value="smarphone">Smarphone</ion-select-option>
               <ion-select-option value="smarphone">Informatique</ion-select-option>
               <ion-select-option value="electronique">Electronique</ion-select-option>
@@ -66,46 +90,58 @@
               <ion-select-option value="sport">Sport</ion-select-option>
             </ion-select>
           </ion-item>
+                   <!-- mode d'acquisition -->
           <ion-item>
-            <ion-input label="Date" type="date"  [(ngModel)]="New.date" required></ion-input>
-          </ion-item>
-          
-          <ion-item>
-            <ion-label floating>Mode d'acquisition</ion-label>
-            <ion-select [(ngModel)]="New.disponibilite.type">
+
+            <ion-select label="Mode d'acquisition"  class="form-control"  [(ngModel)]="New.disponibilite.type" name="disponibilite" required #dispovar="ngModel" [ngClass]="{'is-invalid': dispovar.touched && !dispovar.valid }">
                 <ion-select-option value="Livraison">Livraison</ion-select-option>
                 <ion-select-option value="En magasin">En magasin</ion-select-option>
                 <ion-select-option value="Main">Main a main</ion-select-option>
             </ion-select>
-           
           </ion-item>
+
+          <!-- si la mode d'acquisition est egale a livraison on aura la possiblité de donner les frais de livraison -->
+
           <ion-item *ngIf="New.disponibilite.type ==='Livraison'">
-            <ion-label floating>Frais de livraison</ion-label>
-            <ion-select [(ngModel)]="New.disponibilite.frais">
+
+            <ion-select label="Frais de livraison" [(ngModel)]="New.disponibilite.frais" name="frais"  required  class="form-control" >
               <ion-select-option value="500">500 cfa</ion-select-option>
               <ion-select-option value="1000">1000 cfa</ion-select-option>
               <ion-select-option value="1500">1500 cfa</ion-select-option>
               <ion-select-option value="2000">2000 cfa</ion-select-option>
           </ion-select>
           </ion-item>
+
+          <!-- dire si le produit est disponible maintenant -->
           <ion-item>
-            <ion-toggle [(ngModel)]="New.disponibilite.disponible">Est-il disponible Maintenant</ion-toggle> 
+            <ion-toggle   [(ngModel)]="New.disponibilite.disponible" name="disponible"  class="form-control"  required #dispovar="ngModel" >Est-il disponible Maintenant</ion-toggle> 
           </ion-item>
-
-
+           <!-- Donner une description du produit ou de l'article -->
           <ion-item>
-            <ion-textarea label="Description"  [(ngModel)]="New.description" required>
+            <ion-textarea  label="Description"  [(ngModel)]="New.description" name="description" required   class="form-control"  minlength="10" #descriptvar="ngModel" [ngClass]="{'is-invalid': descriptvar.touched && !descriptvar.valid }">
             </ion-textarea>
           </ion-item>
         </ion-list>
 
-        <!-- <div class="ion-padding"> -->
-          <!-- <ion-button expand="block" type="submit" [disabled]="!f.valid"  class="ion-text-wrap ion-no-margin"  >Create account</ion-button> -->
-          <ion-button   [disabled]="!New" expand="block" (click)="create(New)"  class="ion-text-wrap ion-no-margin"  >Create account</ion-button>
-        <!-- </div> -->
-     
+       <!-- Boutton de validation qui se desactive mais active si le formulaire est valide  -->
+          <ion-button  id="open-toast" type="submit" expand="block"  [disabled]="!donneeform.valid" class="ion-text-wrap ion-no-margin"  (click)="create(New)">Creer l'article</ion-button>
+    
+     <!--  -->
     </ion-card-content>
    </ion-card>
-  <!-- </form> -->
+
+
+</form>
+
+<ion-toast trigger="open-toast" message="Article Créer " [duration]="1500" icon="checkmark-outline" color="success" type="ios" position="top" style="top:7%">
+  <ion-icon name="checkmark-outline"></ion-icon>
+ </ion-toast> 
+
+ 
   <img [src]="getphoto()" alt="" srcset="" />
 </ion-content>
+
+
+
+
+

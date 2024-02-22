@@ -27,6 +27,7 @@ export class RecherchePage implements OnInit {
       this.listArticles =data1
     } )
    }
+// pour faire la recherche d'article 
 
   recherche(event: any) {
     const searchTerm = event.target.value.toLowerCase();
@@ -37,6 +38,8 @@ export class RecherchePage implements OnInit {
     });
   }
 
+  // permet de clicker sur un article apres recherche
+  
   gotodetails(article:ARTICLE) {
        this.route.navigate(['/details',article]);
         
