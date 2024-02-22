@@ -4,11 +4,11 @@
           <ion-icon  md="list-sharp" ios="list-outline"></ion-icon>
        </ion-menu-button>
         <ion-title>TechShop</ion-title>
-        <ion-buttons slot="end">
-          <ion-button>
-            <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
+        <ion-buttons slot="end" >
+          <ion-button (click)="gotomembre()" >
+            <ion-icon name="people-circle-outline" slot="start" ></ion-icon>
           </ion-button>
-          <ion-badge>0</ion-badge>
+         
         </ion-buttons>
        </ion-toolbar>
     </ion-header>

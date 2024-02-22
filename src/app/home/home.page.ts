@@ -34,6 +34,10 @@ article:ARTICLE|undefined
    this.route.navigate(['/details',article]);
   }
 
+  gotomembre(){
+    this.route.navigate(['espace-membre']);
+  }
+
 
 
 
@@ -68,6 +72,7 @@ getarticle(){
       event.target.complete();
     }, 2000);
   } 
+
 }
 
 
