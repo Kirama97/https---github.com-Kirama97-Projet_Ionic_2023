@@ -6,6 +6,7 @@ import { ServiceTechshopService } from '../service-techshop.service';
 import { Camera, CameraResultType, CameraSource, GalleryImageOptions, GalleryPhotos } from '@capacitor/camera';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Filesystem, Directory, Encoding, FilesystemDirectory } from '@capacitor/filesystem';
+import { Router } from '@angular/router';
 
 
  
@@ -23,7 +24,8 @@ listArticles:ARTICLE[] =[];
 article:ARTICLE|undefined 
   tableauImages: any;
   imageSource :any ;
-constructor(private serv :ServiceTechshopService, private domSanitizer :  DomSanitizer) { 
+donneefrom: any;
+constructor(private serv :ServiceTechshopService, private domSanitizer :  DomSanitizer ,private route : Router) { 
   
   this.New = {} as ARTICLE
   this.New.disponibilite= {} as disponibilite 
@@ -36,13 +38,14 @@ constructor(private serv :ServiceTechshopService, private domSanitizer :  DomSan
 
 }
   ngOnInit(): void {
-       console.log();
+      
        
   }
     
  public savedata(donneeform : NgForm){
   console.log(donneeform.form);
  console.log('valeur: ', JSON.stringify(donneeform.value));
+ 
 
  }
 
@@ -53,6 +56,10 @@ constructor(private serv :ServiceTechshopService, private domSanitizer :  DomSan
     })
   }
 
+  gotohome(){
+    this.route.navigate(['/home'])
+    
+   }
 
  ajoutimage = async () =>{
   const image = await Camera.getPhoto({
@@ -64,6 +71,8 @@ constructor(private serv :ServiceTechshopService, private domSanitizer :  DomSan
     
    });
 
+  
+  
 
   // Maintenant, vous pouvez utiliser savedImage pour référencer l'image enregistrée et l'utiliser dans votre application Ionic.
 

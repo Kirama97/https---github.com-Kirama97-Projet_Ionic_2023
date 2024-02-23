@@ -33,27 +33,26 @@
       <!-- title -->
         <ion-list lines="full" class="ion-no-margin ion-no-padding">
         
-         
             <ion-item>
               <ion-input   class="form-control"  label="Titre" aria-label="titre" name="titre"  type="text" [(ngModel)]="New.titre"  required  minlength="2" #titlevar="ngModel" [ngClass]="{'is-invalid': titlevar.touched && !titlevar.valid }" ></ion-input>
-              <span *ngIf="titlevar.errors" class="invalid-feedback">
+              <!-- <span *ngIf="titlevar.errors" class="invalid-feedback">
                 Donner un titre
-              </span>
+              </span> -->
             </ion-item>
 
         <!-- marque -->
           <ion-item>
             <ion-input  class="form-control" label="Marque" name="Marque" aria-label="marque"  type="text"  [(ngModel)]="New.Marque"  required minlength="2" required #marquevar="ngModel" [ngClass]="{'is-invalid': marquevar.touched && !marquevar.valid }"></ion-input>
-            <span *ngIf="marquevar.errors" class="invalid-feedback">
+            <!-- <span *ngIf="marquevar.errors" class="invalid-feedback">
               Donner la marque
-            </span>
+            </span> -->
           </ion-item>
           <!-- prix -->
           <ion-item>
             <ion-input  class="form-control" label="Prix en cfa" aria-label="prix" name="prix" type="number"  [(ngModel)]="New.prix" required minlength="3" #prixvar="ngModel"  [ngClass]="{'is-invalid': prixvar.touched && !prixvar.valid }"></ion-input>
-            <span *ngIf="prixvar.errors" class="invalid-feedback">
+            <!-- <span *ngIf="prixvar.errors" class="invalid-feedback">
               Donner le prix
-            </span>
+            </span> -->
           </ion-item>
           <!-- date -->
           <ion-item>
@@ -124,7 +123,7 @@
         </ion-list>
 
        <!-- Boutton de validation qui se desactive mais active si le formulaire est valide  -->
-          <ion-button  id="open-toast" type="submit" expand="block"  [disabled]="!donneeform.valid" class="ion-text-wrap ion-no-margin"  (click)="create(New)">Creer l'article</ion-button>
+          <ion-button  id="open-toast" type="submit" expand="block"  [disabled]="!donneeform.valid" (click)="gotohome()" class="ion-text-wrap ion-no-margin"  (click)="create(New)">Creer l'article</ion-button>
     
      <!--  -->
     </ion-card-content>

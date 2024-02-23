@@ -709,6 +709,133 @@
       "categorie": "electronique",
       "date": "2024-02-15",
       "description": "Une bonne boitier pour mieu stocker vos données"
+    },
+    {
+      "id": "6f7e",
+      "disponibilite": {
+        "type": "Livraison",
+        "disponible": true,
+        "frais": "1000"
+      },
+      "image": [
+        "/assets/imgs/test.png",
+        "/assets/imgs/test.png",
+        "/assets/imgs/test.png"
+      ],
+      "etoile": [
+        1,
+        2,
+        3
+      ],
+      "titre": "MAC PRO",
+      "Marque": "Apple",
+      "prix": 350000,
+      "date": "2024-02-23",
+      "region": "thies",
+      "state": "neuf",
+      "categorie": "smarphone",
+      "description": "Un bon mac pour "
+    },
+    {
+      "id": "efd4",
+      "disponibilite": {
+        "type": "Livraison",
+        "disponible": true,
+        "frais": "1000"
+      },
+      "image": [
+        "/assets/imgs/test.png",
+        "/assets/imgs/test.png",
+        "/assets/imgs/test.png"
+      ],
+      "etoile": [
+        1,
+        2,
+        3
+      ],
+      "titre": "MAC PRO",
+      "Marque": "Apple",
+      "prix": 350000,
+      "date": "2024-02-23",
+      "region": "thies",
+      "state": "neuf",
+      "categorie": "smarphone",
+      "description": "Un bon mac pour "
+    },
+    {
+      "id": "3401",
+      "disponibilite": {
+        "disponible": true,
+        "type": "Main"
+      },
+      "image": [
+        "/assets/imgs/test.png",
+        "/assets/imgs/test.png",
+        "/assets/imgs/test.png"
+      ],
+      "etoile": [
+        1,
+        2,
+        3
+      ],
+      "titre": "fdfddd",
+      "Marque": "ddddddd",
+      "prix": 234343,
+      "date": "2024-01-31",
+      "region": "diourbel",
+      "state": "neuf",
+      "categorie": "electromenage",
+      "description": "FFDDDDDDDDDDDDDDDDDDDDD"
+    },
+    {
+      "id": "c3dd",
+      "disponibilite": {
+        "disponible": true,
+        "type": "Main"
+      },
+      "image": [
+        "/assets/imgs/test.png",
+        "/assets/imgs/test.png",
+        "/assets/imgs/test.png"
+      ],
+      "etoile": [
+        1,
+        2,
+        3
+      ],
+      "titre": "fdfddd",
+      "Marque": "ddddddd",
+      "prix": 234343,
+      "date": "2024-01-31",
+      "region": "diourbel",
+      "state": "neuf",
+      "categorie": "electromenage",
+      "description": "FFDDDDDDDDDDDDDDDDDDDDD"
+    },
+    {
+      "id": "037e",
+      "disponibilite": {
+        "type": "Main",
+        "disponible": true
+      },
+      "image": [
+        "/assets/imgs/test.png",
+        "/assets/imgs/test.png",
+        "/assets/imgs/test.png"
+      ],
+      "etoile": [
+        1,
+        2,
+        3
+      ],
+      "titre": "SSSS",
+      "Marque": "FFFF",
+      "prix": 1234,
+      "date": "2024-02-23",
+      "region": "diourbel",
+      "state": "neuf",
+      "categorie": "electromenage",
+      "description": "DDDDDDDDDDDDDDD"
     }
   ],
   "categorie": [
