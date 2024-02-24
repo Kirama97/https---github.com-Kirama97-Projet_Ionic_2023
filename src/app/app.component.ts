@@ -42,7 +42,7 @@ export class AppComponent {
     } )
    
     this.getpanier()
-    
+    this.indice
 
   }
 
@@ -61,6 +61,9 @@ gotocategorie(Categories:CATEGORIE){
     this.indice = data.length
     console.log(this.indice)
  } )
+}
+gotopanier(){
+  this.route.navigate(['/panier']);
 }
 
 }

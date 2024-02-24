@@ -59,18 +59,18 @@
     </ion-menu-toggle>
      <ion-menu-toggle >
       <ion-item routerLink="espace-membre">
-        <ion-icon name="people-circle-outline" slot="start"></ion-icon>
-        <ion-label>Membre du projet </ion-label>
+        <ion-icon name="people" slot="start"></ion-icon>
+        <ion-label>Membres du projet </ion-label>
       </ion-item>
     </ion-menu-toggle>
     <ion-menu-toggle>
-      <ion-item  routerlink="panier">
+      <ion-item  (click)="gotopanier()">
         <ion-icon name="cart" slot="start"></ion-icon>
         <ion-label>Panier</ion-label>
       </ion-item>
     </ion-menu-toggle>
     <ion-menu-toggle>
-      <ion-item>
+      <ion-item routerLink="a-propos">
         <ion-icon name="help-circle" slot="start"></ion-icon>
         <ion-label>A propos</ion-label>
       </ion-item>

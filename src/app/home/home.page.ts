@@ -4,6 +4,7 @@ import { ARTICLE } from '../../modele/article';
 import { CATEGORIE } from 'src/modele/categories';
 import {register} from 'swiper/element/bundle';
 import { ServiceTechshopService } from '../service-techshop.service';
+import { CART } from 'src/modele/cart';
 register();
 
 
@@ -15,6 +16,7 @@ register();
 
 export class HomePage implements OnInit{
   isToastOpen: any;
+ 
 setOpen(arg0: boolean) {
 throw new Error('Method not implemented.');
 }
@@ -45,7 +47,8 @@ article:ARTICLE|undefined
 
  this.getarticle();
  this.getcategorie()
-   
+  
+
   }
   // categorie
 
@@ -74,5 +77,4 @@ getarticle(){
   } 
 
 }
-
 
