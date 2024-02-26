@@ -167,8 +167,8 @@
       "Marque": "Tecno",
       "image": [
         "/assets/imgs/Smarphone/Tecno-spark-10c/Tecno-10-pp.jpg",
-        "/assets/imgs/Smarphone/Tecno-spark-10c/Tecno-10-1.jpg",
-        "/assets/imgs/Smarphone/Tecno-spark-10c/Tecno-10-2.jpg"
+        "/assets/imgs/Smarphone/Tecno-spark-10c/Tecno10-1.jpg",
+        "/assets/imgs/Smarphone/Tecno-spark-10c/Tecno10-2.jpg"
       ],
       "prix": 72500,
       "categorie": "Smarphone",
@@ -196,7 +196,7 @@
       "image": [
         "/assets/imgs/Électronique/Barre-de-son/Barre-de-son.jpg",
         "/assets/imgs/Électronique/Barre-de-son/Barre-de-son1.jpg",
-        "/assets/imgs/Électronique/Barre-de-son/Barre-de-son2jpg",
+        "/assets/imgs/Électronique/Barre-de-son/Barre-de-son2.jpg",
         "/assets/imgs/Électronique/Barre-de-son/Barre-de-son3.jpg"
       ],
       "prix": 11500,
@@ -226,7 +226,7 @@
         "/assets/imgs/Électronique/Drone-pliable/Drone-pliable-pp.jpg",
         "/assets/imgs/Électronique/Drone-pliable/Drone-pliable-1.jpg",
         "/assets/imgs/Électronique/Drone-pliable/Drone-pliable-2.jpg",
-        "/assets/imgs/Électronique/Drone-pliable/Drone-pliable-p3.jpg"
+        "/assets/imgs/Électronique/Drone-pliable/Drone-pliable-3.jpg"
       ],
       "prix": 36000,
       "categorie": "Electronique",
@@ -353,7 +353,7 @@
       "Marque": "Tecno",
       "image": [
         "/assets/imgs/Électronique/Tecno-speacker/Tecno-speaker.jpg",
-        "/assets/imgs/Électronique/Tecno-speacker/Tecno-speaker1.jpg"
+        "/assets/imgs/Électronique/Tecno-speacker/Speaker1.jpg"
       ],
       "prix": 12000,
       "categorie": "Electronique",
@@ -639,7 +639,7 @@
       "Marque": "Smart",
       "image": [
         "/assets/imgs/Électroménager/Refrigerateur-2portes-130l/Réfrigérateur-2portes1.jpg",
-        "/assets/imgs/Électroménager/Refrigerateur-2portes-130l/Réfrigérateur-2portes2.jpg"
+        "/assets/imgs/Électroménager/Refrigerateur-2portes-130l/Refrigerateur-2portes2.jpg"
       ],
       "prix": 109000,
       "categorie": "Informatique",
@@ -659,82 +659,247 @@
       }
     },
     {
-      "id": "b729",
-      "disponibilite": {
-        "type": "Livraison",
-        "frais": "1000",
-        "disponible": true
-      },
+      "id": "26",
+      "titre": "Roue Abdominale",
+      "description": "Cette roue est un petit appareil qui vous permet d'augmenter votre force et resistance abdominale",
+      "Marque": "Neant",
       "image": [
-        "/assets/imgs/test.png",
-        "/assets/imgs/test.png",
-        "/assets/imgs/test.png"
+        "/assets/imgs/Sport/Sport1.jpg",
+        "/assets/imgs/Sport/Sport1.jpg",
+        "/assets/imgs/Sport/Sport1.jpg"
       ],
+      "prix": 8400,
+      "categorie": "Sport",
+      "state": "Neuf",
+      "date": "2024-01-01T12:31:37.034Z",
+      "region": "Diourbel",
       "etoile": [
         1,
         2,
-        3
+        3,
+        4
       ],
-      "titre": "Casque Boss X1",
-      "Marque": "Bose",
-      "prix": 150000,
-      "region": "thies",
-      "state": "neuf",
-      "categorie": "electronique",
-      "date": "2024-02-16",
-      "description": "Bose est une marque qui innove de jour en jour en confectionnant des matériels de qualités"
-    },
-    {
-      "id": "26af",
       "disponibilite": {
         "disponible": true,
-        "type": "Livraison",
-        "frais": "500"
-      },
+        "type": "livraison",
+        "frais": 500
+      }
+    },
+    {
+      "id": "27",
+      "titre": "Barre de Traction",
+      "description": "L'appareil de musculation parfait (meme si on est locataire)",
+      "Marque": " Generic",
       "image": [
-        "/assets/imgs/test.png",
-        "/assets/imgs/test.png",
-        "/assets/imgs/test.png"
+        "/assets/imgs/Sport/Sport2.jpg",
+        "/assets/imgs/Sport/Sport2.jpg",
+        "/assets/imgs/Sport/Sport2.jpg"
       ],
+      "prix": 6900,
+      "categorie": "Sport",
+      "state": "Neuf",
+      "date": "2024-01-01T12:31:37.034Z",
+      "region": "Thies",
       "etoile": [
         1,
         2,
         3
       ],
-      "titre": "Boitier disc hdd 3.0",
-      "Marque": "Seagate",
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 300
+      }
+    },
+    {
+      "id": "28",
+      "titre": "Stimulateur Abdominale",
+      "description": "Bon pour stimulé les muscles abdominale ",
+      "Marque": " Generic",
+      "image": [
+        "/assets/imgs/Sport/Sport3.jpg",
+        "/assets/imgs/Sport/Sport3.jpg",
+        "/assets/imgs/Sport/Sport3.jpg"
+      ],
+      "prix": 35000,
+      "categorie": "Sport",
+      "state": "Neuf",
+      "date": "2024-01-01T12:31:37.034Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 500
+      }
+    },
+    {
+      "id": "29",
+      "titre": "Tendeur",
+      "description": "Des tendeurs pour travailler les muscles",
+      "Marque": "Logitech",
+      "image": [
+        "/assets/imgs/Sport/Sport4.jpg",
+        "/assets/imgs/Sport/Sport4.jpg",
+        "/assets/imgs/Sport/Sport4.jpg"
+      ],
+      "prix": 8500,
+      "categorie": "Sport",
+      "state": "Neuf",
+      "date": "2024-01-01T12:31:37.034Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 500
+      }
+    },
+    {
+      "id": "30",
+      "titre": "Bague",
+      "description": "Des bagues élégant pour vos sorti entre collégue",
+      "Marque": "Neant",
+      "image": [
+        "/assets/imgs/Mode/Bague.jpg",
+        "/assets/imgs/Mode/Bague.jpg",
+        "/assets/imgs/Mode/Bague.jpg"
+      ],
       "prix": 3500,
-      "region": "mbour",
-      "state": "neuf",
-      "categorie": "electronique",
-      "date": "2024-02-15",
-      "description": "Une bonne boitier pour mieu stocker vos données"
+      "categorie": "Mode",
+      "state": "Neuf",
+      "date": "2024-01-01T12:31:37.034Z",
+      "region": "Diourbel",
+      "etoile": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 500
+      }
     },
     {
-      "id": "6f7e",
-      "disponibilite": {
-        "type": "Livraison",
-        "disponible": true,
-        "frais": "1000"
-      },
+      "id": "31",
+      "titre": "Bracelet",
+      "description": "Des bracelets de luxe pour accompagner vos tenus de travail",
+      "Marque": "Neant",
       "image": [
-        "/assets/imgs/test.png",
-        "/assets/imgs/test.png",
-        "/assets/imgs/test.png"
+        "/assets/imgs/Mode/Bracelet.jpg",
+        "/assets/imgs/Mode/Bracelet.jpg",
+        "/assets/imgs/Mode/Bracelet.jpg"
       ],
+      "prix": 10900,
+      "categorie": "Mode",
+      "state": "Neuf",
+      "date": "2024-01-01T12:31:37.034Z",
+      "region": "Thies",
       "etoile": [
         1,
         2,
         3
       ],
-      "titre": "MAC PRO",
-      "Marque": "Apple",
-      "prix": 350000,
-      "date": "2024-02-23",
-      "region": "thies",
-      "state": "neuf",
-      "categorie": "smarphone",
-      "description": "Un bon mac pour "
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 500
+      }
+    },
+    {
+      "id": "32",
+      "titre": "Perles",
+      "description": "Des perles de luxe dans vos poignets",
+      "Marque": "Artisant",
+      "image": [
+        "/assets/imgs/Mode/Perle.jpg",
+        "/assets/imgs/Mode/Perle.jpg",
+        "/assets/imgs/Mode/Perle.jpg"
+      ],
+      "prix": 2500,
+      "categorie": "Mode",
+      "state": "Neuf",
+      "date": "2024-01-01T12:31:37.034Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 300
+      }
+    },
+    {
+      "id": "33",
+      "titre": "  T-shirt Blanc",
+      "description": "Des t-shirt pour accompager vos pantalons",
+      "Marque": "Adidas",
+      "image": [
+        "/assets/imgs/Mode/Shirtblanc.jpg",
+        "/assets/imgs/Mode/Shirtblanc.jpg",
+        "/assets/imgs/Mode/Shirtblanc.jpg"
+      ],
+      "prix": 5500,
+      "categorie": "Mode",
+      "state": "Neuf",
+      "date": "2024-01-01T12:31:37.034Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 500
+      }
+    },
+    {
+      "id": "34",
+      "titre": "T-Shirt Noire",
+      "description": "Des t-shirt pour accompager vos pantalons",
+      "Marque": "Adidas",
+      "image": [
+        "/assets/imgs/Mode/Shirtnoire.jpg",
+        "/assets/imgs/Mode/Shirtnoire.jpg",
+        "/assets/imgs/Mode/Shirtnoire.jpg"
+      ],
+      "prix": 55000,
+      "categorie": "Mode",
+      "state": "Neuf",
+      "date": "2024-01-01T12:31:37.034Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 500
+      }
     }
   ],
   "categorie": [
@@ -1431,20 +1596,21 @@
     {
       "id": "5",
       "titre": "Mode",
-      "description": "Des articles de model (chaussure ,t-shirt ,pantalon ,chemise et autres )",
+      "description": "Des articles de mode (chaussure ,t-shirt ,pantalon ,chemise et autres )",
       "icone": "shirt-outline",
       "liste_articles": [
         {
-          "id": "15",
-          "titre": "Cable-hdmi",
-          "description": "HDMI est le nouveau standard de connexion audio-visuel permettant d'afficher des images haute définition parfaitement nettes sur votre téléviseur HD. Disposant de sorties audio et vidéo, les câbles HDMI constituent la solution la plus simple et la meilleure pour connecter des lecteurs de disques Blu-Ray et des consoles de jeu vidéo de dernière génération telles que la Xbox 360 et la Playstation 3, ainsi que tout autre appareil doté d'une sortie HDMI. Les connecteurs plaqués or garantissent que le câble transfère les informations le plus efficacement possible, vous offrant ainsi la meilleure qualité d'image possible. La longueur du câble est de 10 mètres. Il est donc idéal pour connecter des appareils proches de votre téléviseur sans que le câblage en excès ne gâche le processus.",
+          "id": "30",
+          "titre": "Bague",
+          "description": "Des bagues élégant pour vos sorti entre collégue",
           "Marque": "Neant",
           "image": [
-            "/assets/imgs/Informatique/Cable-hdmi/Hdmi.jpg",
-            "/assets/imgs/Informatique/Cable-hdmi/Hdmi1.jpg"
+            "/assets/imgs/Mode/Bague.jpg",
+            "/assets/imgs/Mode/Bague.jpg",
+            "/assets/imgs/Mode/Bague.jpg"
           ],
           "prix": 3500,
-          "categorie": "Informatique",
+          "categorie": "Mode",
           "state": "Neuf",
           "date": "2024-01-01T12:31:37.034Z",
           "region": "Diourbel",
@@ -1457,19 +1623,19 @@
           "disponibilite": {
             "disponible": true,
             "type": "livraison",
-            "frais": 1000
+            "frais": 500
           }
         },
         {
-          "id": "16",
-          "titre": "Clavier",
-          "description": " Clavier de jeu avec des lumières LED en métal, ergonomiques et environnementales qui créent une atmosphère de base parfaite pour les joueurs. La base est faite de 100% métal, construction robuste et durable",
-          "Marque": "Corsair",
+          "id": "31",
+          "titre": "Bracelet",
+          "description": "Des bracelets de luxe pour accompagner vos tenus de travail",
+          "Marque": "Neant",
           "image": [
-            "/assets/imgs/Informatique/Clavier/clavier.jpg"
+            "/assets/imgs/Mode/Bracelet.jpg"
           ],
-          "prix": 14900,
-          "categorie": "Informatique",
+          "prix": 10900,
+          "categorie": "Mode",
           "state": "Neuf",
           "date": "2024-01-01T12:31:37.034Z",
           "region": "Thies",
@@ -1481,19 +1647,21 @@
           "disponibilite": {
             "disponible": true,
             "type": "livraison",
-            "frais": 1500
+            "frais": 500
           }
         },
         {
-          "id": "17",
-          "titre": "Ideapad3",
-          "description": "L’ordinateur portable IdeaPad 1 (81WQ004CFE) Celeron Dual Core N4020 donne tort à tous ces on-dit ! Vous pouvez désormais profiter de performances de standart sur un appareil fin et léger offrant une incroyable autonomie.",
-          "Marque": "Lenovo",
+          "id": "32",
+          "titre": "Perles",
+          "description": "Des perles de luxe dans vos poignets",
+          "Marque": "Artisant",
           "image": [
-            "/assets/imgs/Informatique/Ideapad3/Ideapad-3.jpg"
+            "/assets/imgs/Mode/Perle.jpg",
+            "/assets/imgs/Mode/Perle.jpg",
+            "/assets/imgs/Mode/Perle.jpg"
           ],
-          "prix": 162000,
-          "categorie": "Informatique",
+          "prix": 2500,
+          "categorie": "Mode",
           "state": "Neuf",
           "date": "2024-01-01T12:31:37.034Z",
           "region": "Dakar",
@@ -1507,20 +1675,21 @@
           "disponibilite": {
             "disponible": true,
             "type": "livraison",
-            "frais": 1500
+            "frais": 300
           }
         },
         {
-          "id": "18",
-          "titre": "Souris-sans-fil",
-          "description": "Souris d'ordinateur sans fil rechargeable - Cette souris USB sans fil à LED est dotée d'une batterie rechargeable intégrée de 500 mA. S'il est complètement chargé, il peut être utilisé pendant environ 3 semaines ; si la batterie est faible, la lumière de la souris s'éteint et le mouvement du curseur ralentit ou ne bouge pas. Veuillez charger à temps. Bien entendu, cette souris dispose également d'une fonction d'économie d'énergie automatique. Une fois la souris allumée pendant 8 minutes, si elle n'est pas utilisée, elle entrera en mode veille.",
-          "Marque": "Logitech",
+          "id": "33",
+          "titre": "  T-shirt Blanc",
+          "description": "Des t-shirt pour accompager vos pantalons",
+          "Marque": "Adidas",
           "image": [
-            "/assets/imgs/Informatique/Souris-sans-fil/Souris-sans-fil1.jpg",
-            "/assets/imgs/Informatique/Souris-sans-fil/Souris-sans-fil2.jpg"
+            "/assets/imgs/Mode/Shirtblanc.jpg",
+            "/assets/imgs/Mode/Shirtblanc.jpg",
+            "/assets/imgs/Mode/Shirtblanc.jpg"
           ],
-          "prix": 2350,
-          "categorie": "Informatique",
+          "prix": 5500,
+          "categorie": "Mode",
           "state": "Neuf",
           "date": "2024-01-01T12:31:37.034Z",
           "region": "Dakar",
@@ -1537,17 +1706,17 @@
           }
         },
         {
-          "id": "19",
-          "titre": "Hp 250 G8",
-          "description": "L’ordinateur portable HP 250 s’adapte aux styles de travail mobiles avec une conception fine et légère. Le superbe écran, avec ses bordures étroites et un ratio écran/châssis optimal, offre un espace suffisant pour le travail comme pour le contenu en streaming.",
-          "Marque": "HP",
+          "id": "34",
+          "titre": "T-Shirt Noire",
+          "description": "Des t-shirt pour accompager vos pantalons",
+          "Marque": "Adidas",
           "image": [
-            "/assets/imgs/Informatique/Hp-G8/HpG8.jpg",
-            "/assets/imgs/Informatique/Hp-G8/HpG81.jpg",
-            "/assets/imgs/Informatique/Hp-G8/HpG82.jpg"
+            "/assets/imgs/Mode/Shirtnoire.jpg",
+            "/assets/imgs/Mode/Shirtnoire.jpg",
+            "/assets/imgs/Mode/Shirtnoire.jpg"
           ],
-          "prix": 12000,
-          "categorie": "Informatique",
+          "prix": 55000,
+          "categorie": "Mode",
           "state": "Neuf",
           "date": "2024-01-01T12:31:37.034Z",
           "region": "Dakar",
@@ -1560,7 +1729,7 @@
           "disponibilite": {
             "disponible": true,
             "type": "livraison",
-            "frais": 1200
+            "frais": 500
           }
         }
       ]
@@ -1572,16 +1741,17 @@
       "icone": "barbell-outline",
       "liste_articles": [
         {
-          "id": "15",
-          "titre": "Cable-hdmi",
-          "description": "HDMI est le nouveau standard de connexion audio-visuel permettant d'afficher des images haute définition parfaitement nettes sur votre téléviseur HD. Disposant de sorties audio et vidéo, les câbles HDMI constituent la solution la plus simple et la meilleure pour connecter des lecteurs de disques Blu-Ray et des consoles de jeu vidéo de dernière génération telles que la Xbox 360 et la Playstation 3, ainsi que tout autre appareil doté d'une sortie HDMI. Les connecteurs plaqués or garantissent que le câble transfère les informations le plus efficacement possible, vous offrant ainsi la meilleure qualité d'image possible. La longueur du câble est de 10 mètres. Il est donc idéal pour connecter des appareils proches de votre téléviseur sans que le câblage en excès ne gâche le processus.",
+          "id": "26",
+          "titre": "Roue Abdominale",
+          "description": "Cette roue est un petit appareil qui vous permet d'augmenter votre force et resistance abdominale",
           "Marque": "Neant",
           "image": [
-            "/assets/imgs/Informatique/Cable-hdmi/Hdmi.jpg",
-            "/assets/imgs/Informatique/Cable-hdmi/Hdmi1.jpg"
+            "/assets/imgs/Sport/Sport1.jpg",
+            "/assets/imgs/Sport/Sport1.jpg",
+            "/assets/imgs/Sport/Sport1.jpg"
           ],
-          "prix": 3500,
-          "categorie": "Informatique",
+          "prix": 8400,
+          "categorie": "Sport",
           "state": "Neuf",
           "date": "2024-01-01T12:31:37.034Z",
           "region": "Diourbel",
@@ -1594,19 +1764,21 @@
           "disponibilite": {
             "disponible": true,
             "type": "livraison",
-            "frais": 1000
+            "frais": 500
           }
         },
         {
-          "id": "16",
-          "titre": "Clavier",
-          "description": " Clavier de jeu avec des lumières LED en métal, ergonomiques et environnementales qui créent une atmosphère de base parfaite pour les joueurs. La base est faite de 100% métal, construction robuste et durable",
-          "Marque": "Corsair",
+          "id": "27",
+          "titre": "Barre de Traction",
+          "description": "L'appareil de musculation parfait (meme si on est locataire)",
+          "Marque": " Generic",
           "image": [
-            "/assets/imgs/Informatique/Clavier/clavier.jpg"
+            "/assets/imgs/Sport/Sport2.jpg",
+            "/assets/imgs/Sport/Sport2.jpg",
+            "/assets/imgs/Sport/Sport2.jpg"
           ],
-          "prix": 14900,
-          "categorie": "Informatique",
+          "prix": 6900,
+          "categorie": "Sport",
           "state": "Neuf",
           "date": "2024-01-01T12:31:37.034Z",
           "region": "Thies",
@@ -1618,19 +1790,21 @@
           "disponibilite": {
             "disponible": true,
             "type": "livraison",
-            "frais": 1500
+            "frais": 300
           }
         },
         {
-          "id": "17",
-          "titre": "Ideapad3",
-          "description": "L’ordinateur portable IdeaPad 1 (81WQ004CFE) Celeron Dual Core N4020 donne tort à tous ces on-dit ! Vous pouvez désormais profiter de performances de standart sur un appareil fin et léger offrant une incroyable autonomie.",
-          "Marque": "Lenovo",
+          "id": "28",
+          "titre": "Stimulateur Abdominale",
+          "description": "Bon pour stimulé les muscles abdominale ",
+          "Marque": " Generic",
           "image": [
-            "/assets/imgs/Informatique/Ideapad3/Ideapad-3.jpg"
+            "/assets/imgs/Sport/Sport3.jpg",
+            "/assets/imgs/Sport/Sport3.jpg",
+            "/assets/imgs/Sport/Sport3.jpg"
           ],
-          "prix": 162000,
-          "categorie": "Informatique",
+          "prix": 35000,
+          "categorie": "Sport",
           "state": "Neuf",
           "date": "2024-01-01T12:31:37.034Z",
           "region": "Dakar",
@@ -1644,20 +1818,21 @@
           "disponibilite": {
             "disponible": true,
             "type": "livraison",
-            "frais": 1500
+            "frais": 500
           }
         },
         {
-          "id": "18",
-          "titre": "Souris-sans-fil",
-          "description": "Souris d'ordinateur sans fil rechargeable - Cette souris USB sans fil à LED est dotée d'une batterie rechargeable intégrée de 500 mA. S'il est complètement chargé, il peut être utilisé pendant environ 3 semaines ; si la batterie est faible, la lumière de la souris s'éteint et le mouvement du curseur ralentit ou ne bouge pas. Veuillez charger à temps. Bien entendu, cette souris dispose également d'une fonction d'économie d'énergie automatique. Une fois la souris allumée pendant 8 minutes, si elle n'est pas utilisée, elle entrera en mode veille.",
+          "id": "29",
+          "titre": "Tendeur",
+          "description": "Des tendeurs pour travailler les muscles",
           "Marque": "Logitech",
           "image": [
-            "/assets/imgs/Informatique/Souris-sans-fil/Souris-sans-fil1.jpg",
-            "/assets/imgs/Informatique/Souris-sans-fil/Souris-sans-fil2.jpg"
+            "/assets/imgs/Sport/Sport4.jpg",
+            "/assets/imgs/Sport/Sport4.jpg",
+            "/assets/imgs/Sport/Sport4.jpg"
           ],
-          "prix": 2350,
-          "categorie": "Informatique",
+          "prix": 8500,
+          "categorie": "Sport",
           "state": "Neuf",
           "date": "2024-01-01T12:31:37.034Z",
           "region": "Dakar",
@@ -1672,36 +1847,42 @@
             "type": "livraison",
             "frais": 500
           }
-        },
-        {
-          "id": "19",
-          "titre": "Hp 250 G8",
-          "description": "L’ordinateur portable HP 250 s’adapte aux styles de travail mobiles avec une conception fine et légère. Le superbe écran, avec ses bordures étroites et un ratio écran/châssis optimal, offre un espace suffisant pour le travail comme pour le contenu en streaming.",
-          "Marque": "HP",
-          "image": [
-            "/assets/imgs/Informatique/Hp-G8/HpG8.jpg",
-            "/assets/imgs/Informatique/Hp-G8/HpG81.jpg",
-            "/assets/imgs/Informatique/Hp-G8/HpG82.jpg"
-          ],
-          "prix": 12000,
-          "categorie": "Informatique",
-          "state": "Neuf",
-          "date": "2024-01-01T12:31:37.034Z",
-          "region": "Dakar",
-          "etoile": [
-            1,
-            2,
-            3,
-            4
-          ],
-          "disponibilite": {
-            "disponible": true,
-            "type": "livraison",
-            "frais": 1200
-          }
         }
       ]
     }
   ],
-  "panier": []
+  "panier": [
+    {
+      "id": "6762",
+      "article": {
+        "id": "14",
+        "titre": "Tecno speacker",
+        "description": " Ce haut-parleur a été conçu avec un éclairage LED intégré qui donne un effet très esthétique aux utilisateurs. Avec ce haut-parleur Bluetooth, vous apprécierez votre musique et votre son préférés même s'il n'y a pas de lumière, mais assurez-vous qu'il est correctement chargé avec une bonne tension. Cet appareil peut ajouter de la couleur à votre pique-nique léger, anniversaire, fête et autres cérémonies parties. il peut vous aider à écouter votre matériel académique téléchargé sur les fichiers audio et pratique de votre maison ou au bureau.ce haut-parleur a été conçu avec un éclairage led intégré qui donne un effet très esthétique aux utilisateurs.avec ce haut-parleur Bluetooth vous apprécierez votre musique préférée et le son même il n'ya pas de lumière, mais assurez-vous qu'il est correctement chargé avec une bonne tension. Cet appareil peut ajouter de la couleur à votre pique-nique léger, anniversaire, fête et autres cérémonies parties. il peut vous aider à écouter votre matériel académique téléchargé sur les fichiers audio et pratique de votre maison ou au bureau.",
+        "Marque": "Tecno",
+        "image": [
+          "/assets/imgs/Électronique/Tecno-speacker/Tecno-speaker.jpg",
+          "/assets/imgs/Électronique/Tecno-speacker/Tecno1.jpg"
+        ],
+        "prix": 12000,
+        "categorie": "Electronique",
+        "state": "Neuf",
+        "date": "2024-01-01T12:23:44.903Z",
+        "region": "Diourbel",
+        "etoile": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "disponibilite": {
+          "disponible": true,
+          "type": "livraison",
+          "frais": 700
+        }
+      },
+      "quantite": 1,
+      "somme": 12000
+    }
+  ]
 }
