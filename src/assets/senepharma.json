@@ -349,6 +349,352 @@
         "type": "livraison",
         "frais": 500
       }
+    },
+    {
+      "id": "15",
+      "titre": " Dentifrise Oral-B",
+      "description": "Conçus pour entretenir une bonne hygiène dentaire, il existe forcément le dentifrice Oral B fait pour vous! Découvrez nos produits et choisissez le votre.",
+      "image": [
+        "/assets/imgs/Produit_cosmetique/oral-b1.jpg",
+        "/assets/imgs/Produit_cosmetique/oral-b2.jpg",
+        "/assets/imgs/Produit_cosmetique/oral-b3.webp"
+      ],
+      "prix": 6000,
+      "categorie": "Produit Cosmetique",
+      "date": "2024-01-01T12:23:44.903Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 1000
+      }
+    },
+    {
+      "id": "16",
+      "titre": " Dentifrise Sensodyne",
+      "description": "Tous les dentifrices Sensodyne contiennent du fluorure, un minéral naturel qui pénètre dans les tissus minéralisés, tels que les os et les dents. Il durcit l'émail des dents et les protège contre la carie dentaire, ce qui vous permet de conserver des dents saines tous les jours.",
+      "image": [
+        "/assets/imgs/Produit_cosmetique/sensodyne1.jpg",
+        "/assets/imgs/Produit_cosmetique/sensodyne2.jpg",
+        "/assets/imgs/Produit_cosmetique/sensodyne3.jpg"
+      ],
+      "prix": 4750,
+      "categorie": "Produit Cosmetique",
+      "date": "2024-01-01T12:23:44.903Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 1000
+      }
+    },
+    {
+      "id": "17",
+      "titre": " Lait de corps Mixa",
+      "description": "Mixa est une marque de cosmétiques créée en 1924 et spécialisée dans les soins pour le corps et la peau.",
+      "image": [
+        "/assets/imgs/Produit_cosmetique/mixa1.webp",
+        "/assets/imgs/Produit_cosmetique/mixa2.webp",
+        "/assets/imgs/Produit_cosmetique/mixa3.webp"
+      ],
+      "prix": 2550,
+      "categorie": "Produit Cosmetique",
+      "date": "2024-01-01T12:23:44.903Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 500
+      }
+    },
+    {
+      "id": "18",
+      "titre": "Babymed",
+      "description": "Babymed est une large gamme de soins pour nettoyer, hydrater, protéger la peau des bébés et des nourrissons dans le plus grand respect. Formulée ...",
+      "image": [
+        "/assets/imgs/Produit_cosmetique/babymed1.jpg",
+        "/assets/imgs/Produit_cosmetique/babymed2.jpg",
+        "/assets/imgs/Produit_cosmetique/babymed3.png"
+      ],
+      "prix": 7000,
+      "categorie": "Produit Cosmetique",
+      "date": "2024-01-01T12:23:44.903Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 1000
+      }
+    },
+    {
+      "id": "19",
+      "titre": "NIVEA LAIT",
+      "description": "Le Lait Fluide Hydratation Express offre un soin 5-en-1 pour une peau intensément hydratée, plus douce et éclatante de santé.",
+      "image": [
+        "/assets/imgs/Produit_cosmetique/nivea1.webp",
+        "/assets/imgs/Produit_cosmetique/nivea2.webp",
+        "/assets/imgs/Produit_cosmetique/nivea3.webp"
+      ],
+      "prix": 4500,
+      "categorie": "Produit Cosmetique",
+      "date": "2024-01-01T12:23:44.903Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 1000
+      }
+    },
+    {
+      "id": "20",
+      "titre": "Château Rouge Lait de Beauté",
+      "description": "Château Rouge Lait de Beauté Éclaircissant & Unifiant s’adresse aux peaux noires à métissées.Ce lait unifie les zones sombres comme les articulations, les doigts, les coudes et les genoux.Ses actifs unifiants d’origine végétale et marine favorisent la diminution des taches brunes et préviennent leur réapparition. Il redonne souplesse et confort à la peau grâce à l’huile d’amande douce (habituellement reconnue pour ses propriétés hydratantes, nourrissantes et adoucissantes) et la glycérine qui adoucit la peau et la rend plus souple.Il offre également un fini ultra doux et satiné.SANS PARABEN, SANS PHENOXYETHANOL.",
+      "image": [
+        "/assets/imgs/Produit_cosmetique/chateau-rouge1.webp",
+        "/assets/imgs/Produit_cosmetique/chateau-rouge2.webp",
+        "/assets/imgs/Produit_cosmetique/chateau-rouge3.jpg"
+      ],
+      "prix": 11500,
+      "categorie": "Produit Cosmetique",
+      "date": "2024-01-01T12:23:44.903Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 1500
+      }
+    },
+    {
+      "id": "21",
+      "titre": "COCO MADEMOISELLE",
+      "description": "COCO MADEMOISELLE. Un ambré féminin au caractère affirmé d'une étonnante fraîcheur. Un double nom qui évoque la double personnalité d’une femme espiègle et provocante, indépendante et attachante, libre de se réinventer. COCO MADEMOISELLE se décline en EAU DE PARFUM INTENSE, EAU DE PARFUM , EAU DE TOILETTE, EAU POUR LA NUIT, soins pour le corps et vaporisateurs de sac.",
+      "image": [
+        "/assets/imgs/Produit_cosmetique/coco_chanel1.jpg",
+        "/assets/imgs/Produit_cosmetique/coco_chanel2.png",
+        "/assets/imgs/Produit_cosmetique/coco_chanel3.jpg"
+      ],
+      "prix": 60000,
+      "categorie": "Produit Cosmetique",
+      "date": "2024-01-01T12:23:44.903Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 2500
+      }
+    },
+    {
+      "id": "22",
+      "titre": "Hydraphase",
+      "description": "Hydraphase Retrouvez tous les soins hydratants : sérums, crèmes et fluides Hydraphase à l'efficacité longue durée pour repulper et réhydrater les peaux déshydratées et sèches. Enrichis d'eau thermale La Roche-Posay et dermo-testés sur des peaux sensibles.",
+      "image": [
+        "/assets/imgs/Produit_cosmetique/hydraphase1.jpg",
+        "/assets/imgs/Produit_cosmetique/hydraphase2.jpg",
+        "/assets/imgs/Produit_cosmetique/hydraphase.jpg"
+      ],
+      "prix": 3700,
+      "categorie": "Produit Cosmetique",
+      "date": "2024-01-01T12:23:44.903Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 500
+      }
+    },
+    {
+      "id": "23",
+      "titre": "Serviette Angel Moon",
+      "description": "Angels Secret combine des propriétés antibactériennes et super absorbantes avec une serviette hygiénique hautement respirante pour favoriser une sécurité propre, confortable et fiable. Anti-bactérien: technologie des ions négatifs.",
+      "image": [
+        "/assets/imgs/Produit_cosmetique/angel1.webp",
+        "/assets/imgs/Produit_cosmetique/angel2.jpg",
+        "/assets/imgs/Produit_cosmetique/angel3.jpg"
+      ],
+      "prix": 4500,
+      "categorie": "Produit Cosmetique",
+      "date": "2024-01-01T12:23:44.903Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 500
+      }
+    },
+    {
+      "id": "24",
+      "titre": "Nestelé NAN",
+      "description": "le lait maternel est l’aliment idéal du nourrisson et l’allaitement devrait être poursuivi le plus longtemps possible. Consultez votre médecin avant de décider de l’utilisation d’un lait infantile.",
+      "image": [
+        "/assets/imgs/Produit_alimentaire/nan1.jpeg",
+        "/assets/imgs/Produit_alimentaire/nan2.jpeg",
+        "/assets/imgs/Produit_alimentaire/nan3.jpeg"
+      ],
+      "prix": 3000,
+      "categorie": "Produit Alimentaire",
+      "date": "2024-01-01T12:23:44.903Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 500
+      }
+    },
+    {
+      "id": "25",
+      "titre": "Cérelac",
+      "description": "le lait maternel est l’aliment idéal du nourrisson et l’allaitement devrait être poursuivi le plus longtemps possible. Consultez votre médecin avant de décider de l’utilisation d’un lait infantile.",
+      "image": [
+        "/assets/imgs/Produit_alimentaire/cerelac2.jpeg",
+        "/assets/imgs/Produit_alimentaire/cerelac1.jpeg",
+        "/assets/imgs/Produit_alimentaire/cerelac3.jpeg"
+      ],
+      "prix": 3000,
+      "categorie": "Produit Alimentaire",
+      "date": "2024-01-01T12:23:44.903Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 500
+      }
+    },
+    {
+      "id": "26",
+      "titre": "Yogi Thé",
+      "description": "Yogi Tea Matcha & Citron est une infusion aux plantes composée d'ingrédients issus de l'Agriculture Biologique. Le Matcha représentant les nobles thés verts est fusionné avec de la Citronnelle et une pointe de Citron vert. Ce mélange vous fera découvrir une délicieuse expérience gustative. La poudre de Matcha vous apportera en plus de son parfum, ses propriétés bénéfiques pour votre bien être. Produit Vegan - Sans gluten.",
+      "image": [
+        "/assets/imgs/Produit_alimentaire/the1.png",
+        "/assets/imgs/Produit_alimentaire/the2.webp"
+      ],
+      "prix": 15000,
+      "categorie": "Produit Alimentaire",
+      "date": "2024-01-01T12:23:44.903Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 1500
+      }
+    },
+    {
+      "id": "27",
+      "titre": "Confiserie Menthe",
+      "description": "Les bonbons Pulmoll sont des pastilles pour la gorge qui favorisent également la bonne minéralisation des dents. Ils sont sans sucres et sont formulés à base d'arôme naturel d'eucalyptus, de menthol et d'extrait de thé blanc.",
+      "image": [
+        "/assets/imgs/Produit_alimentaire/confiserie1.webp",
+        "/assets/imgs/Produit_alimentaire/confiserie2.webp"
+      ],
+      "prix": 1200,
+      "categorie": "Produit Alimentaire",
+      "date": "2024-01-01T12:23:44.903Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 1500
+      }
+    },
+    {
+      "id": "d2c6",
+      "disponibilite": {
+        "type": "Main",
+        "disponible": true
+      },
+      "image": [
+        "/assets/imgs/logo.png",
+        "/assets/imgs/logo.png",
+        "/assets/imgs/logo.png"
+      ],
+      "etoile": [
+        1,
+        2,
+        3
+      ],
+      "titre": "savon",
+      "prix": 15000,
+      "date": "2024-08-08",
+      "region": "thies",
+      "categorie": "electronique",
+      "description": "ffffffffffffffffffffffffffffffffff"
     }
   ],
   "categorie": [
@@ -721,9 +1067,237 @@
     {
       "id": "3",
       "titre": "Produits Cosmetique",
-      "description": "Il s'agit de toute personne physique ou morale qui fabrique ou fait concevoir ou fabriquer un produit cosmétique et commercialise ce produit sous son nom ou sa ..",
+      "description": "leur rôle est, comme leur nom l'indique, d'assurer l'hygiène du corps, premier geste de soin beauté! produits de soins : crèmes de soin, masques, laits corporels, laits solaires… Ils ont pour mission de préserver les fonctions naturelles de la peau, et de lui assurer une protection contre les agressions externes.",
       "icone": "flask-outline",
-      "liste_articles": []
+      "liste_articles": [
+        {
+          "id": "15",
+          "titre": " Dentifrise Oral-B",
+          "description": "Conçus pour entretenir une bonne hygiène dentaire, il existe forcément le dentifrice Oral B fait pour vous! Découvrez nos produits et choisissez le votre.",
+          "image": [
+            "/assets/imgs/Produit_cosmetique/oral-b1.jpg",
+            "/assets/imgs/Produit_cosmetique/oral-b2.jpg",
+            "/assets/imgs/Produit_cosmetique/oral-b3.webp"
+          ],
+          "prix": 6000,
+          "categorie": "Produit Cosmetique",
+          "date": "2024-01-01T12:23:44.903Z",
+          "region": "Dakar",
+          "etoile": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "disponibilite": {
+            "disponible": true,
+            "type": "livraison",
+            "frais": 1000
+          }
+        },
+        {
+          "id": "16",
+          "titre": " Dentifrise Sensodyne",
+          "description": "Tous les dentifrices Sensodyne contiennent du fluorure, un minéral naturel qui pénètre dans les tissus minéralisés, tels que les os et les dents. Il durcit l'émail des dents et les protège contre la carie dentaire, ce qui vous permet de conserver des dents saines tous les jours.",
+          "image": [
+            "/assets/imgs/Produit_cosmetique/sensodyne1.jpg",
+            "/assets/imgs/Produit_cosmetique/sensodyne2.jpg",
+            "/assets/imgs/Produit_cosmetique/sensodyne3.jpg"
+          ],
+          "prix": 4750,
+          "categorie": "Produit Cosmetique",
+          "date": "2024-01-01T12:23:44.903Z",
+          "region": "Dakar",
+          "etoile": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "disponibilite": {
+            "disponible": true,
+            "type": "livraison",
+            "frais": 1000
+          }
+        },
+        {
+          "id": "17",
+          "titre": " Lait de corps Mixa",
+          "description": "Mixa est une marque de cosmétiques créée en 1924 et spécialisée dans les soins pour le corps et la peau.",
+          "image": [
+            "/assets/imgs/Produit_cosmetique/mixa1.webp",
+            "/assets/imgs/Produit_cosmetique/mixa2.webp",
+            "/assets/imgs/Produit_cosmetique/mixa3.webp"
+          ],
+          "prix": 2550,
+          "categorie": "Produit Cosmetique",
+          "date": "2024-01-01T12:23:44.903Z",
+          "region": "Dakar",
+          "etoile": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "disponibilite": {
+            "disponible": true,
+            "type": "livraison",
+            "frais": 500
+          }
+        },
+        {
+          "id": "18",
+          "titre": "Babymed",
+          "description": "Babymed est une large gamme de soins pour nettoyer, hydrater, protéger la peau des bébés et des nourrissons dans le plus grand respect. Formulée ...",
+          "image": [
+            "/assets/imgs/Produit_cosmetique/babymed1.jpg",
+            "/assets/imgs/Produit_cosmetique/babymed2.jpg",
+            "/assets/imgs/Produit_cosmetique/babymed3.png"
+          ],
+          "prix": 7000,
+          "categorie": "Produit Cosmetique",
+          "date": "2024-01-01T12:23:44.903Z",
+          "region": "Dakar",
+          "etoile": [
+            1,
+            2,
+            3
+          ],
+          "disponibilite": {
+            "disponible": true,
+            "type": "livraison",
+            "frais": 1000
+          }
+        },
+        {
+          "id": "19",
+          "titre": "NIVEA LAIT",
+          "description": "Le Lait Fluide Hydratation Express offre un soin 5-en-1 pour une peau intensément hydratée, plus douce et éclatante de santé.",
+          "image": [
+            "/assets/imgs/Produit_cosmetique/nivea1.webp",
+            "/assets/imgs/Produit_cosmetique/nivea2.webp",
+            "/assets/imgs/Produit_cosmetique/nivea3.webp"
+          ],
+          "prix": 4500,
+          "categorie": "Produit Cosmetique",
+          "date": "2024-01-01T12:23:44.903Z",
+          "region": "Dakar",
+          "etoile": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "disponibilite": {
+            "disponible": true,
+            "type": "livraison",
+            "frais": 1000
+          }
+        },
+        {
+          "id": "20",
+          "titre": "Château Rouge Lait de Beauté",
+          "description": "Château Rouge Lait de Beauté Éclaircissant & Unifiant s’adresse aux peaux noires à métissées.Ce lait unifie les zones sombres comme les articulations, les doigts, les coudes et les genoux.Ses actifs unifiants d’origine végétale et marine favorisent la diminution des taches brunes et préviennent leur réapparition. Il redonne souplesse et confort à la peau grâce à l’huile d’amande douce (habituellement reconnue pour ses propriétés hydratantes, nourrissantes et adoucissantes) et la glycérine qui adoucit la peau et la rend plus souple.Il offre également un fini ultra doux et satiné.SANS PARABEN, SANS PHENOXYETHANOL.",
+          "image": [
+            "/assets/imgs/Produit_cosmetique/chateau-rouge1.webp",
+            "/assets/imgs/Produit_cosmetique/chateau-rouge2.webp",
+            "/assets/imgs/Produit_cosmetique/chateau-rouge3.jpg"
+          ],
+          "prix": 11500,
+          "categorie": "Produit Cosmetique",
+          "date": "2024-01-01T12:23:44.903Z",
+          "region": "Dakar",
+          "etoile": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "disponibilite": {
+            "disponible": true,
+            "type": "livraison",
+            "frais": 1500
+          }
+        },
+        {
+          "id": "21",
+          "titre": "COCO MADEMOISELLE",
+          "description": "COCO MADEMOISELLE. Un ambré féminin au caractère affirmé d'une étonnante fraîcheur. Un double nom qui évoque la double personnalité d’une femme espiègle et provocante, indépendante et attachante, libre de se réinventer. COCO MADEMOISELLE se décline en EAU DE PARFUM INTENSE, EAU DE PARFUM , EAU DE TOILETTE, EAU POUR LA NUIT, soins pour le corps et vaporisateurs de sac.",
+          "image": [
+            "/assets/imgs/Produit_cosmetique/coco_chanel1.jpg",
+            "/assets/imgs/Produit_cosmetique/coco_chanel2.png",
+            "/assets/imgs/Produit_cosmetique/coco_chanel3.jpg"
+          ],
+          "prix": 60000,
+          "categorie": "Produit Cosmetique",
+          "date": "2024-01-01T12:23:44.903Z",
+          "region": "Dakar",
+          "etoile": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "disponibilite": {
+            "disponible": true,
+            "type": "livraison",
+            "frais": 2500
+          }
+        },
+        {
+          "id": "22",
+          "titre": "Hydraphase",
+          "description": "Hydraphase Retrouvez tous les soins hydratants : sérums, crèmes et fluides Hydraphase à l'efficacité longue durée pour repulper et réhydrater les peaux déshydratées et sèches. Enrichis d'eau thermale La Roche-Posay et dermo-testés sur des peaux sensibles.",
+          "image": [
+            "/assets/imgs/Produit_cosmetique/hydraphase1.jpg",
+            "/assets/imgs/Produit_cosmetique/hydraphase2.jpg",
+            "/assets/imgs/Produit_cosmetique/hydraphase.jpg"
+          ],
+          "prix": 3700,
+          "categorie": "Produit Cosmetique",
+          "date": "2024-01-01T12:23:44.903Z",
+          "region": "Dakar",
+          "etoile": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "disponibilite": {
+            "disponible": true,
+            "type": "livraison",
+            "frais": 500
+          }
+        },
+        {
+          "id": "23",
+          "titre": "Serviette Angel Moon",
+          "description": "Angels Secret combine des propriétés antibactériennes et super absorbantes avec une serviette hygiénique hautement respirante pour favoriser une sécurité propre, confortable et fiable. Anti-bactérien: technologie des ions négatifs.",
+          "image": [
+            "/assets/imgs/Produit_cosmetique/angel1.webp",
+            "/assets/imgs/Produit_cosmetique/angel2.jpg",
+            "/assets/imgs/Produit_cosmetique/angel3.jpg"
+          ],
+          "prix": 4500,
+          "categorie": "Produit Cosmetique",
+          "date": "2024-01-01T12:23:44.903Z",
+          "region": "Dakar",
+          "etoile": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "disponibilite": {
+            "disponible": true,
+            "type": "livraison",
+            "frais": 500
+          }
+        }
+      ]
     },
     {
       "id": "4",
@@ -733,5 +1307,150 @@
       "liste_articles": []
     }
   ],
-  "panier": []
+  "panier": [
+    {
+      "id": "d3cb",
+      "article": {
+        "id": "6",
+        "titre": "Paracetamol",
+        "description": "Le paracétamol est un analgésique et antipyrétique de premier choix. Il est souvent indiqué pour soulager la fièvre et combattre la douleur légère à modérée (fièvre, mal de dents, courbature...). Les marques les plus connues de paracétamol sont : Doliprane, Dafalgan, Efferalgan.",
+        "image": [
+          "/assets/imgs/Medicament/paracetamol.png"
+        ],
+        "prix": 1000,
+        "categorie": "Medicament",
+        "date": "2024-01-01T12:23:44.903Z",
+        "region": "Dakar",
+        "etoile": [
+          1,
+          2,
+          3
+        ],
+        "disponibilite": {
+          "disponible": true,
+          "type": "livraison",
+          "frais": 500
+        }
+      },
+      "quantite": 1,
+      "somme": 1000
+    },
+    {
+      "id": "1800",
+      "article": {
+        "id": "6",
+        "titre": "Paracetamol",
+        "description": "Le paracétamol est un analgésique et antipyrétique de premier choix. Il est souvent indiqué pour soulager la fièvre et combattre la douleur légère à modérée (fièvre, mal de dents, courbature...). Les marques les plus connues de paracétamol sont : Doliprane, Dafalgan, Efferalgan.",
+        "image": [
+          "/assets/imgs/Medicament/paracetamol.png"
+        ],
+        "prix": 1000,
+        "categorie": "Medicament",
+        "date": "2024-01-01T12:23:44.903Z",
+        "region": "Dakar",
+        "etoile": [
+          1,
+          2,
+          3
+        ],
+        "disponibilite": {
+          "disponible": true,
+          "type": "livraison",
+          "frais": 500
+        }
+      },
+      "quantite": 1,
+      "somme": 1000
+    },
+    {
+      "id": "0c4e",
+      "article": {
+        "id": "9",
+        "titre": "Inhalateurs Doseurs",
+        "description": "Les inhalateurs-doseurs, ces petits appareils projetant des bouffées de médicament dans la gorge des patients, contiennent de puissants gaz à effet de serre (GES). Ceux-ci ne servent qu'à propulser l'agent actif.",
+        "image": [
+          "/assets/imgs/Equipement_medical/pompe_aire.webp",
+          "/assets/imgs/Equipement_medical/pompe_aire.webp",
+          "/assets/imgs/Equipement_medical/pompe_aire.webp"
+        ],
+        "prix": 35000,
+        "categorie": "Equipement_medical",
+        "date": "2024-01-01T12:23:44.903Z",
+        "region": "Dakar",
+        "etoile": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "disponibilite": {
+          "disponible": true,
+          "type": "livraison",
+          "frais": 1500
+        }
+      },
+      "quantite": 1,
+      "somme": 35000
+    },
+    {
+      "id": "f9bc",
+      "article": {
+        "id": "9",
+        "titre": "Inhalateurs Doseurs",
+        "description": "Les inhalateurs-doseurs, ces petits appareils projetant des bouffées de médicament dans la gorge des patients, contiennent de puissants gaz à effet de serre (GES). Ceux-ci ne servent qu'à propulser l'agent actif.",
+        "image": [
+          "/assets/imgs/Equipement_medical/pompe_aire.webp",
+          "/assets/imgs/Equipement_medical/pompe_aire.webp",
+          "/assets/imgs/Equipement_medical/pompe_aire.webp"
+        ],
+        "prix": 35000,
+        "categorie": "Equipement_medical",
+        "date": "2024-01-01T12:23:44.903Z",
+        "region": "Dakar",
+        "etoile": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "disponibilite": {
+          "disponible": true,
+          "type": "livraison",
+          "frais": 1500
+        }
+      },
+      "quantite": 1,
+      "somme": 35000
+    },
+    {
+      "id": "dac8",
+      "article": {
+        "id": "d2c6",
+        "disponibilite": {
+          "type": "Main",
+          "disponible": true
+        },
+        "image": [
+          "/assets/imgs/logo.png",
+          "/assets/imgs/logo.png",
+          "/assets/imgs/logo.png"
+        ],
+        "etoile": [
+          1,
+          2,
+          3
+        ],
+        "titre": "savon",
+        "prix": 15000,
+        "date": "2024-08-08",
+        "region": "thies",
+        "categorie": "electronique",
+        "description": "ffffffffffffffffffffffffffffffffff"
+      },
+      "quantite": 1,
+      "somme": 15000
+    }
+  ]
 }

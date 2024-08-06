@@ -79,6 +79,8 @@ component-segment ion-content ion-segment {
   justify-content: space-between;
   height: 17%;
   object-fit: cover;
+  overflow-x: hidden;
+  gap: 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 0px 0px;
 
@@ -91,7 +93,7 @@ component-segment ion-content ion-segment {
   width: 22%;
   // width: 100px;
   height:100%;
-  // margin:  5px 0px;
+ 
   
 }
 
@@ -102,6 +104,7 @@ component-segment ion-content ion-segment {
     width: 100%;
     object-fit:cover;
     border-radius: 10px;
+    // background-color: #00BF63;
   }
 
 .blocategorie {
@@ -110,51 +113,60 @@ display: flex;
 background-color: rgba(0, 0, 0, 0.63);
 height: 17%;
 }
-  .contenu_smarphone{
+  .contenu_medoc{
     
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
+    // align-items: center;
+    justify-content: center;
+    gap: 25px 20px;
    
     
   }
   .listcategorie{
    margin: 0px;
+   display: flex;
+   background-color: white;
    border-radius: 0px;
+   padding: 25px 5px;
     
   }
 
-  .smarphone{
+  .medoc{
     text-align: center;
-    width: 120px;
-    background-color: rgba(255, 255, 255, 0.37);
-    border-radius: 15px;
-    
+    width: 115;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 5px;
+    background-color: #00bf6308 ;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.018);
+    border-radius: 3px;
+  
+
   }
 
-  .smarphone img{
-    width: 100%;
-    height: 100px;
+  .medoc img{
+    width: 70%;
+    height: 55%;
     object-fit: cover;
-    border-radius: 20px;
-  }
-
-  .smarphone p{
-    font-size: 12px;
-    padding:0 5px;
-    
-    
-  }
-
-  .smarphone #prix{
-    font-size: 13px;
-    font-weight: bold;
    
   }
+
+  .medoc p{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.727);
+    width: 100%;
+    margin-bottom: 5px;
+    
+  }
+
+ 
   #card2{
     background-color: rgba(255, 255, 255, 0);
     margin:0px;
@@ -169,13 +181,118 @@ height: 17%;
     
   }
 
+  #prix {
+   width: 150px;
+   margin: 0 auto;
+
+    font-size: 10px;
+    font-weight: bold;
+     padding: 7px ;
+    background-color: #00BF63;
+    border-radius: 5px;
+    color: white;
+  }
 
   // screen desktop
 
   @media  screen and (min-width:800px) {
     
+
+
     .blocvideo{
-      height: 30%;
+      padding: 10px;
+      display: flex;
+      align-content: center;
+      background-color:#00BF63;
+      justify-content: space-between;
+      height: 25%;
+      object-fit: cover;
+      overflow-x: hidden;
+      gap: 10px;
+      margin: 10px 0;
+      box-shadow: 0px 0px 0px 0px;
+    
+     
+    }
+
+    
+.blocvideo swiper-container{
+  width: 12%;
+  // width: 100px;
+  height:100%;
+ 
+  
+}
+
+.blocategorie {
+
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.63);
+  height: 17%;
+  }
+    .contenu_medoc{
+      
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      // align-items: center;
+      justify-content: center;
+      gap: 80px ;
+     
+      padding: 30px;
+     
+      
+    }
+    .listcategorie{
+     margin: 0px;
+     display: flex;
+     background-color: white;
+     border-radius: 0px;
+     padding: 25px 10px;
+      
+    }
+  
+    .medoc{
+      text-align: center;
+      width: 320px;
+      height: 450px;
+      box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.164);
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      gap: 15px;
+     
+    
+    }
+  
+    .medoc img{
+      width: 90%;
+      height: 60%;
+      object-fit: cover;
+     
+    }
+  
+    .medoc p{
+      font-size: 20px;
+      padding:0 5px;
+      color: rgba(0, 0, 0, 0.727);
+      
+      
     }
     
+    #prix {
+      display: block;
+      width: 200px;
+      margin: 0 auto;
+      font-size: 22px;
+      font-weight: bold;
+       padding: 15px ;
+      background-color: #00BF63;
+      border-radius: 20px;
+      color: white;
+    }
   }

@@ -30,9 +30,9 @@ constructor(private serv :ServiceTechshopService, private domSanitizer :  DomSan
   this.New = {} as ARTICLE
   this.New.disponibilite= {} as disponibilite 
   this.New.image = [
-     "/assets/imgs/test.png",
-     "/assets/imgs/test.png",
-     "/assets/imgs/test.png"
+     "/assets/imgs/logo.png",
+     "/assets/imgs/logo.png",
+     "/assets/imgs/logo.png"
   ];
   this.New.etoile=[1,2,3]
 
