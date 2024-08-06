@@ -40,13 +40,6 @@
               </span> -->
             </ion-item>
 
-        <!-- marque -->
-          <ion-item>
-            <ion-input  class="form-control" label="Marque" name="Marque" aria-label="marque"  type="text"  [(ngModel)]="New.Marque"  required minlength="2" required #marquevar="ngModel" [ngClass]="{'is-invalid': marquevar.touched && !marquevar.valid }"></ion-input>
-            <!-- <span *ngIf="marquevar.errors" class="invalid-feedback">
-              Donner la marque
-            </span> -->
-          </ion-item>
           <!-- prix -->
           <ion-item>
             <ion-input  class="form-control" label="Prix en cfa" aria-label="prix" name="prix" type="number"  [(ngModel)]="New.prix" required minlength="3" #prixvar="ngModel"  [ngClass]="{'is-invalid': prixvar.touched && !prixvar.valid }"></ion-input>
@@ -70,14 +63,7 @@
             </ion-select>
            
           </ion-item>
-          <!-- state -->
-          <ion-item>
-            
-            <ion-select  class="form-control" label="State" placeholder="State" name="state"  [(ngModel)]="New.state"  required  #statevar="ngModel" [ngClass]="{'is-invalid': statevar.touched && !statevar.valid }" >
-              <ion-select-option value="occasion">Occasion</ion-select-option>
-              <ion-select-option value="neuf">Neuf</ion-select-option>
-            </ion-select>
-          </ion-item>
+         
           <!-- categorie -->
           <ion-item>
             <ion-select   class="form-control" label="Categorie" placeholder="categorie" name="categorie" [(ngModel)]="New.categorie" required #categorievar="ngModel" [ngClass]="{'is-invalid': categorievar.touched && !categorievar.valid }">

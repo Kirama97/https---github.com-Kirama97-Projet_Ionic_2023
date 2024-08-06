@@ -3,7 +3,9 @@
         <ion-menu-button  menu="main-menu" slot="start" fill="clear" color="light">
           <ion-icon  md="list-sharp" ios="list-outline"></ion-icon>
        </ion-menu-button>
-        <ion-title>TechShop</ion-title>
+        <ion-title>
+         Senepharma
+        </ion-title>
         <ion-buttons slot="end" (click)="gotomembre()">
           <ion-button  >
             <ion-icon name="people" slot="start" ></ion-icon>
@@ -15,7 +17,7 @@
     
 
 
-    <ion-content>
+    <ion-content class="contenu">
       <!-- permet l'actualisation de cette page -->
       <ion-refresher slot="fixed" [pullFactor]="0.5" [pullMin]="100" [pullMax]="200" (ionRefresh)="handleRefresh($event)">
         <ion-refresher-content></ion-refresher-content>

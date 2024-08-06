@@ -1,0 +1,737 @@
+{
+  "article": [
+    {
+      "id": "1",
+      "titre": "DACRYO",
+      "description": "DACRYO® HYDRATATION DES YEUX SECS est une solution ophtalmique sous forme de gouttes oculaires lubrifiantes et hydratantes. Cette solution apporte une sensation de fraicheur qui lubrifie, hydrate et rafraichit les yeux secs et fatigués dès son application. Le flacon est équipé de la technologie brevetée 3K®, empêchant l'air et de potentielles bactéries de pénétrer dans le flacon. À partir de 3 ans.",
+      "image": [
+        "/assets/imgs/Medicament/dacryo.jpg",
+        "/assets/imgs/Medicament/dacryo.jpg",
+        "/assets/imgs/Medicament/dacryo.jpg"
+      ],
+      "prix": 9500,
+      "categorie": "Medicament",
+      "date": "2024-01-01T12:23:44.903Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 500
+      }
+    },
+    {
+      "id": "2",
+      "titre": "Toularynx",
+      "description": "Toularynx dextromethorphan appartient au groupe des antitussifs.Toularynx dextromethorphan est indiqué dans le traitement des symptômes d'une toux sèche et gênante.",
+      "image": [
+        "/assets/imgs/Medicament/toularynx.jpg",
+        "/assets/imgs/Medicament/toularynx.jpg",
+        "/assets/imgs/Medicament/toularynx.jpg"
+      ],
+      "prix": 5400,
+      "categorie": "Medicament",
+      "date": "2024-01-01T12:23:44.903Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 500
+      }
+    },
+    {
+      "id": "3",
+      "titre": "Ranitidine",
+      "description": "La ranitidine réduit la sécrétion d'acide par l'estomac afin de soulager les brûlures et l'irritation de la muqueuse gastro-intestinale et de favoriser la cicatrisation et la prévention des ulcères.",
+      "image": [
+        "/assets/imgs/Medicament/ranitidin.jpg"
+      ],
+      "prix": 11600,
+      "categorie": "Medicament",
+      "date": "2024-01-01T12:23:44.903Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 700
+      }
+    },
+    {
+      "id": "4",
+      "titre": "Aspirin",
+      "description": " L'acide acétylsalicylique (AAS), plus connu sous le nom commercial d'aspirine, est un antiagrégant plaquettaire. C'est la substance active de nombreux médicaments aux propriétés antalgiques, antipyrétiques et anti-inflammatoires. Il est surtout utilisé comme antiagrégant plaquettaire.",
+      "image": [
+        "assets/imgs/Medicament/aspirin.webp",
+        "assets/imgs/Medicament/aspirin.webp",
+        "assets/imgs/Medicament/aspirin.webp"
+      ],
+      "prix": 1500,
+      "categorie": "Medicament",
+      "date": "2024-01-01T12:23:44.903Z",
+      "region": "Thies",
+      "etoile": [
+        1,
+        2,
+        3
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 500
+      }
+    },
+    {
+      "id": "5",
+      "titre": "Ibuproféne",
+      "description": " Substance active ibuprofène. L'ibuprofène est un anti-inflammatoire non stéroïdien (AINS), appartenant au groupe des propioniques, dérivé de l'acide arylcarboxylique. Il possède des propriétés antalgique, antipyrétique, anti-inflammatoire et inhibitrice de courte durée des fonctions plaquettaires.",
+      "image": [
+        "/assets/imgs/Medicament/ibuprofene.webp"
+      ],
+      "prix": 1200,
+      "categorie": "Medicament",
+      "date": "2024-01-01T12:23:44.903Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 500
+      }
+    },
+    {
+      "id": "6",
+      "titre": "Paracetamol",
+      "description": "Le paracétamol est un analgésique et antipyrétique de premier choix. Il est souvent indiqué pour soulager la fièvre et combattre la douleur légère à modérée (fièvre, mal de dents, courbature...). Les marques les plus connues de paracétamol sont : Doliprane, Dafalgan, Efferalgan.",
+      "image": [
+        "/assets/imgs/Medicament/paracetamol.png"
+      ],
+      "prix": 1000,
+      "categorie": "Medicament",
+      "date": "2024-01-01T12:23:44.903Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 500
+      }
+    },
+    {
+      "id": "7",
+      "titre": "Amoxicilline Sandoz 500mg",
+      "description": " AMOXICILLINE SANDOZ 500 mg, gélule est un antibiotique. Le principe actif est l'amoxicilline. Celui-ci appartient à un groupe de médicaments appelés « pénicillines ». AMOXICILLINE SANDOZ 500 mg, gélule est utilisé pour traiter des infections causées par des bactéries, dans différentes parties du corps.",
+      "image": [
+        "/assets/imgs/Medicament/amoxicilline.webp",
+        "/assets/imgs/Medicament/amoxicilline.webp",
+        "/assets/imgs/Medicament/amoxicilline.webp"
+      ],
+      "prix": 1500,
+      "categorie": "Medicament",
+      "date": "2024-01-01T12:23:44.903Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 500
+      }
+    },
+    {
+      "id": "8",
+      "titre": "Fauteuil Roulant",
+      "description": "Ce fauteuil est une excellente solution pour les transferts d'une personne à mobilité réduite réalisés par un aidant. Il est facilement maniable grâce à ses poignées ergonomiques et sa capacité à être plié rapidement, grâce à ses poignées, permet de le transporter ou le ranger facilement.Le fauteuil de transfert dispose de deux freins à actionner séparément. Ils ont une option parking, actionnable en poussant les manettes vers le bas.Le dossier du fauteuil peut être cassé vers l'arrière.",
+      "image": [
+        "/assets/imgs/Equipement_medical/fauteuil_roulant.webp",
+        "/assets/imgs/Equipement_medical/fauteuil_roulant.webp",
+        "/assets/imgs/Equipement_medical/fauteuil_roulant.webp"
+      ],
+      "prix": 45000,
+      "categorie": "Equipement_medical",
+      "date": "2024-01-01T12:23:44.903Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 2000
+      }
+    },
+    {
+      "id": "9",
+      "titre": "Inhalateurs Doseurs",
+      "description": "Les inhalateurs-doseurs, ces petits appareils projetant des bouffées de médicament dans la gorge des patients, contiennent de puissants gaz à effet de serre (GES). Ceux-ci ne servent qu'à propulser l'agent actif.",
+      "image": [
+        "/assets/imgs/Equipement_medical/pompe_aire.webp",
+        "/assets/imgs/Equipement_medical/pompe_aire.webp",
+        "/assets/imgs/Equipement_medical/pompe_aire.webp"
+      ],
+      "prix": 35000,
+      "categorie": "Equipement_medical",
+      "date": "2024-01-01T12:23:44.903Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 1500
+      }
+    },
+    {
+      "id": "10",
+      "titre": "Glucometre",
+      "description": "Un glucomètre ou lecteur de glycémie est un appareil permettant de mesurer rapidement le taux de glucose dans le sang (la glycémie), le plus souvent sur du sang capillaire. Ce type d'appareil est utilisé à l'hôpital par les soignants ou à domicile par les patients, notamment en cas de diabète sucré.",
+      "image": [
+        "/assets/imgs/Equipement_medical/glucometre1.jpg",
+        "/assets/imgs/Equipement_medical/glucometre2.jpg",
+        "/assets/imgs/Equipement_medical/glucometre1.jpg"
+      ],
+      "prix": 15000,
+      "categorie": "Equipement_medical",
+      "date": "2024-01-01T12:23:44.903Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 1000
+      }
+    },
+    {
+      "id": "11",
+      "titre": "Tensionmetre",
+      "description": "Un tensiomètre permet de mesurer la tension artérielle. Lorsqu’une personne réalise la prise de mesures à domicile, sans l’intervention d’un professionnel de santé, on parle également d’autotensiomètre. Cet équipement s’avère très utile pour réaliser un suivi sur plusieurs jours avant de retourner voir son médecin. Les modèles électroniques à bras ou à poignet sont les plus répandus, sachant que de plus en plus sont connectés. Sélectionner un tensiomètre fiable et simple à utiliser demeure primordial, l’hypertension pouvant causer de graves troubles cardiovasculaires.",
+      "image": [
+        "/assets/imgs/Equipement_medical/tensionmetre.jpeg",
+        "/assets/imgs/Equipement_medical/tensionmetre1.png",
+        "/assets/imgs/Equipement_medical/tensionmetre2.jpg"
+      ],
+      "prix": 17000,
+      "categorie": "Equipement_medical",
+      "date": "2024-01-01T12:23:44.903Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 1000
+      }
+    },
+    {
+      "id": "12",
+      "titre": "Seringue ",
+      "description": "Une seringue est un tube muni d'un piston qui est terminé par une ouverture sur laquelle se fixe une aiguille creuse ou un petit tube.",
+      "image": [
+        "/assets/imgs/Equipement_medical/seringue.webp",
+        "/assets/imgs/Equipement_medical/seringue1.jpg",
+        "/assets/imgs/Equipement_medical/seringue2.jpg"
+      ],
+      "prix": 10000,
+      "categorie": "Equipement_medical",
+      "date": "2024-01-01T12:23:44.903Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 500
+      }
+    },
+    {
+      "id": "13",
+      "titre": " Gants stériles à usage unique ",
+      "description": "Les gants stériles à usage unique portés en salle d'opération doivent soutenir le chirurgien dans son travail. Il est particulièrement important qu'ils offrent une bonne sensibilité tactile. Ceci est garanti d'une part par le matériau et d'autre part par l'épaisseur du matériau. Plus un gant à usage unique est fin, meilleure est la sensation tactile. Cependant, le gant ne doit pas être trop fin pour ne pas se déchirer ou fuir rapidement. Avec de nombreux gants, la surface au bout des doigts est telle qu'ils offrent une bonne adhérence même dans des conditions humides.",
+      "image": [
+        "/assets/imgs/Equipement_medical/gant.webp",
+        "/assets/imgs/Equipement_medical/gant2.webp",
+        "/assets/imgs/Equipement_medical/gant1.jpg"
+      ],
+      "prix": 9000,
+      "categorie": "Equipement_medical",
+      "date": "2024-01-01T12:23:44.903Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 500
+      }
+    },
+    {
+      "id": "14",
+      "titre": " Sparadrad",
+      "description": "Bande adhésive de tissu, de papier ou de matière plastique utilisée comme pansement ou pour le maintien d'un pansement.",
+      "image": [
+        "/assets/imgs/Equipement_medical/sparadrad.jpg",
+        "/assets/imgs/Equipement_medical/sparadrad1.jpeg",
+        "/assets/imgs/Equipement_medical/sparadrad2.jpg"
+      ],
+      "prix": 5000,
+      "categorie": "Equipement_medical",
+      "date": "2024-01-01T12:23:44.903Z",
+      "region": "Dakar",
+      "etoile": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "disponibilite": {
+        "disponible": true,
+        "type": "livraison",
+        "frais": 500
+      }
+    }
+  ],
+  "categorie": [
+    {
+      "id": "1",
+      "titre": "Medicaments",
+      "description": " Un médicament est toute substance ou composition présentée comme possédant des propriétés curatives ou préventives à l'égard des maladies humaines ou ...",
+      "icone": "medkit-outline",
+      "liste_articles": [
+        {
+          "id": "1",
+          "titre": "DACRYO",
+          "description": "DACRYO® HYDRATATION DES YEUX SECS est une solution ophtalmique sous forme de gouttes oculaires lubrifiantes et hydratantes. Cette solution apporte une sensation de fraicheur qui lubrifie, hydrate et rafraichit les yeux secs et fatigués dès son application. Le flacon est équipé de la technologie brevetée 3K®, empêchant l'air et de potentielles bactéries de pénétrer dans le flacon. À partir de 3 ans.",
+          "image": [
+            "/assets/imgs/Medicament/dacryo.jpg",
+            "/assets/imgs/Medicament/dacryo.jpg",
+            "/assets/imgs/Medicament/dacryo.jpg"
+          ],
+          "prix": 9500,
+          "categorie": "Medicament",
+          "date": "2024-01-01T12:23:44.903Z",
+          "region": "Dakar",
+          "etoile": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "disponibilite": {
+            "disponible": true,
+            "type": "livraison",
+            "frais": 500
+          }
+        },
+        {
+          "id": "2",
+          "titre": "Toularynx",
+          "description": "Toularynx dextromethorphan appartient au groupe des antitussifs.Toularynx dextromethorphan est indiqué dans le traitement des symptômes d'une toux sèche et gênante.",
+          "image": [
+            "/assets/imgs/Medicament/toularynx.jpg",
+            "/assets/imgs/Medicament/toularynx.jpg",
+            "/assets/imgs/Medicament/toularynx.jpg"
+          ],
+          "prix": 5400,
+          "categorie": "Medicament",
+          "date": "2024-01-01T12:23:44.903Z",
+          "region": "Dakar",
+          "etoile": [
+            1,
+            2,
+            3
+          ],
+          "disponibilite": {
+            "disponible": true,
+            "type": "livraison",
+            "frais": 500
+          }
+        },
+        {
+          "id": "3",
+          "titre": "Ranitidine",
+          "description": "La ranitidine réduit la sécrétion d'acide par l'estomac afin de soulager les brûlures et l'irritation de la muqueuse gastro-intestinale et de favoriser la cicatrisation et la prévention des ulcères.",
+          "image": [
+            "/assets/imgs/Medicament/ranitidin.jpg"
+          ],
+          "prix": 11600,
+          "categorie": "Medicament",
+          "date": "2024-01-01T12:23:44.903Z",
+          "region": "Dakar",
+          "etoile": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "disponibilite": {
+            "disponible": true,
+            "type": "livraison",
+            "frais": 700
+          }
+        },
+        {
+          "id": "4",
+          "titre": "Aspirin",
+          "description": " L'acide acétylsalicylique (AAS), plus connu sous le nom commercial d'aspirine, est un antiagrégant plaquettaire. C'est la substance active de nombreux médicaments aux propriétés antalgiques, antipyrétiques et anti-inflammatoires. Il est surtout utilisé comme antiagrégant plaquettaire.",
+          "image": [
+            "assets/imgs/Medicament/aspirin.webp",
+            "assets/imgs/Medicament/aspirin.webp",
+            "assets/imgs/Medicament/aspirin.webp"
+          ],
+          "prix": 1500,
+          "categorie": "Medicament",
+          "date": "2024-01-01T12:23:44.903Z",
+          "region": "Thies",
+          "etoile": [
+            1,
+            2,
+            3
+          ],
+          "disponibilite": {
+            "disponible": true,
+            "type": "livraison",
+            "frais": 500
+          }
+        },
+        {
+          "id": "5",
+          "titre": "Ibuproféne",
+          "description": " Substance active ibuprofène. L'ibuprofène est un anti-inflammatoire non stéroïdien (AINS), appartenant au groupe des propioniques, dérivé de l'acide arylcarboxylique. Il possède des propriétés antalgique, antipyrétique, anti-inflammatoire et inhibitrice de courte durée des fonctions plaquettaires.",
+          "image": [
+            "/assets/imgs/Medicament/ibuprofene.webp"
+          ],
+          "prix": 1200,
+          "categorie": "Medicament",
+          "date": "2024-01-01T12:23:44.903Z",
+          "region": "Dakar",
+          "etoile": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "disponibilite": {
+            "disponible": true,
+            "type": "livraison",
+            "frais": 500
+          }
+        },
+        {
+          "id": "6",
+          "titre": "Paracetamol",
+          "description": "Le paracétamol est un analgésique et antipyrétique de premier choix. Il est souvent indiqué pour soulager la fièvre et combattre la douleur légère à modérée (fièvre, mal de dents, courbature...). Les marques les plus connues de paracétamol sont : Doliprane, Dafalgan, Efferalgan.",
+          "image": [
+            "/assets/imgs/Medicament/paracetamol.png"
+          ],
+          "prix": 1000,
+          "categorie": "Medicament",
+          "date": "2024-01-01T12:23:44.903Z",
+          "region": "Dakar",
+          "etoile": [
+            1,
+            2,
+            3
+          ],
+          "disponibilite": {
+            "disponible": true,
+            "type": "livraison",
+            "frais": 500
+          }
+        },
+        {
+          "id": "7",
+          "titre": "Amoxicilline Sandoz 500mg",
+          "description": " AMOXICILLINE SANDOZ 500 mg, gélule est un antibiotique. Le principe actif est l'amoxicilline. Celui-ci appartient à un groupe de médicaments appelés « pénicillines ». AMOXICILLINE SANDOZ 500 mg, gélule est utilisé pour traiter des infections causées par des bactéries, dans différentes parties du corps.",
+          "image": [
+            "/assets/imgs/Medicament/amoxicilline.webp",
+            "/assets/imgs/Medicament/amoxicilline.webp",
+            "/assets/imgs/Medicament/amoxicilline.webp"
+          ],
+          "prix": 1500,
+          "categorie": "Medicament",
+          "date": "2024-01-01T12:23:44.903Z",
+          "region": "Dakar",
+          "etoile": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "disponibilite": {
+            "disponible": true,
+            "type": "livraison",
+            "frais": 500
+          }
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "titre": "Equipement Medical",
+      "description": "L'équipement médical est constitué de l'appareillage destiné à aider le diagnostic et le traitement de problèmes médicaux. Il est en général conçu selon des ...",
+      "icone": "bandage-outline",
+      "liste_articles": [
+        {
+          "id": "8",
+          "titre": "Fauteuil Roulant",
+          "description": "Ce fauteuil est une excellente solution pour les transferts d'une personne à mobilité réduite réalisés par un aidant. Il est facilement maniable grâce à ses poignées ergonomiques et sa capacité à être plié rapidement, grâce à ses poignées, permet de le transporter ou le ranger facilement.Le fauteuil de transfert dispose de deux freins à actionner séparément. Ils ont une option parking, actionnable en poussant les manettes vers le bas.Le dossier du fauteuil peut être cassé vers l'arrière.",
+          "image": [
+            "/assets/imgs/Equipement_medical/fauteuil_roulant.webp",
+            "/assets/imgs/Equipement_medical/fauteuil_roulant.webp",
+            "/assets/imgs/Equipement_medical/fauteuil_roulant.webp"
+          ],
+          "prix": 45000,
+          "categorie": "Equipement_medical",
+          "date": "2024-01-01T12:23:44.903Z",
+          "region": "Dakar",
+          "etoile": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "disponibilite": {
+            "disponible": true,
+            "type": "livraison",
+            "frais": 2000
+          }
+        },
+        {
+          "id": "9",
+          "titre": "Inhalateurs Doseurs",
+          "description": "Les inhalateurs-doseurs, ces petits appareils projetant des bouffées de médicament dans la gorge des patients, contiennent de puissants gaz à effet de serre (GES). Ceux-ci ne servent qu'à propulser l'agent actif.",
+          "image": [
+            "/assets/imgs/Equipement_medical/pompe_aire.webp",
+            "/assets/imgs/Equipement_medical/pompe_aire.webp",
+            "/assets/imgs/Equipement_medical/pompe_aire.webp"
+          ],
+          "prix": 35000,
+          "categorie": "Equipement_medical",
+          "date": "2024-01-01T12:23:44.903Z",
+          "region": "Dakar",
+          "etoile": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "disponibilite": {
+            "disponible": true,
+            "type": "livraison",
+            "frais": 1500
+          }
+        },
+        {
+          "id": "10",
+          "titre": "Glucometre",
+          "description": "Un glucomètre ou lecteur de glycémie est un appareil permettant de mesurer rapidement le taux de glucose dans le sang (la glycémie), le plus souvent sur du sang capillaire. Ce type d'appareil est utilisé à l'hôpital par les soignants ou à domicile par les patients, notamment en cas de diabète sucré.",
+          "image": [
+            "/assets/imgs/Equipement_medical/glucometre1.jpg",
+            "/assets/imgs/Equipement_medical/glucometre2.jpg",
+            "/assets/imgs/Equipement_medical/glucometre1.jpg"
+          ],
+          "prix": 15000,
+          "categorie": "Equipement_medical",
+          "date": "2024-01-01T12:23:44.903Z",
+          "region": "Dakar",
+          "etoile": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "disponibilite": {
+            "disponible": true,
+            "type": "livraison",
+            "frais": 1000
+          }
+        },
+        {
+          "id": "11",
+          "titre": "Tensionmetre",
+          "description": "Un tensiomètre permet de mesurer la tension artérielle. Lorsqu’une personne réalise la prise de mesures à domicile, sans l’intervention d’un professionnel de santé, on parle également d’autotensiomètre. Cet équipement s’avère très utile pour réaliser un suivi sur plusieurs jours avant de retourner voir son médecin. Les modèles électroniques à bras ou à poignet sont les plus répandus, sachant que de plus en plus sont connectés. Sélectionner un tensiomètre fiable et simple à utiliser demeure primordial, l’hypertension pouvant causer de graves troubles cardiovasculaires.",
+          "image": [
+            "/assets/imgs/Equipement_medical/tensionmetre.jpeg",
+            "/assets/imgs/Equipement_medical/tensionmetre1.png",
+            "/assets/imgs/Equipement_medical/tensionmetre2.jpg"
+          ],
+          "prix": 17000,
+          "categorie": "Equipement_medical",
+          "date": "2024-01-01T12:23:44.903Z",
+          "region": "Dakar",
+          "etoile": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "disponibilite": {
+            "disponible": true,
+            "type": "livraison",
+            "frais": 1000
+          }
+        },
+        {
+          "id": "12",
+          "titre": "Seringue ",
+          "description": "Une seringue est un tube muni d'un piston qui est terminé par une ouverture sur laquelle se fixe une aiguille creuse ou un petit tube.",
+          "image": [
+            "/assets/imgs/Equipement_medical/seringue.webp",
+            "/assets/imgs/Equipement_medical/seringue1.jpg",
+            "/assets/imgs/Equipement_medical/seringue2.jpg"
+          ],
+          "prix": 10000,
+          "categorie": "Equipement_medical",
+          "date": "2024-01-01T12:23:44.903Z",
+          "region": "Dakar",
+          "etoile": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "disponibilite": {
+            "disponible": true,
+            "type": "livraison",
+            "frais": 500
+          }
+        },
+        {
+          "id": "13",
+          "titre": " Gants stériles à usage unique ",
+          "description": "Les gants stériles à usage unique portés en salle d'opération doivent soutenir le chirurgien dans son travail. Il est particulièrement important qu'ils offrent une bonne sensibilité tactile. Ceci est garanti d'une part par le matériau et d'autre part par l'épaisseur du matériau. Plus un gant à usage unique est fin, meilleure est la sensation tactile. Cependant, le gant ne doit pas être trop fin pour ne pas se déchirer ou fuir rapidement. Avec de nombreux gants, la surface au bout des doigts est telle qu'ils offrent une bonne adhérence même dans des conditions humides.",
+          "image": [
+            "/assets/imgs/Equipement_medical/gant.webp",
+            "/assets/imgs/Equipement_medical/gant2.webp",
+            "/assets/imgs/Equipement_medical/gant1.jpg"
+          ],
+          "prix": 9000,
+          "categorie": "Equipement_medical",
+          "date": "2024-01-01T12:23:44.903Z",
+          "region": "Dakar",
+          "etoile": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "disponibilite": {
+            "disponible": true,
+            "type": "livraison",
+            "frais": 500
+          }
+        },
+        {
+          "id": "14",
+          "titre": " Sparadrad",
+          "description": "Bande adhésive de tissu, de papier ou de matière plastique utilisée comme pansement ou pour le maintien d'un pansement.",
+          "image": [
+            "/assets/imgs/Equipement_medical/sparadrad.jpg",
+            "/assets/imgs/Equipement_medical/sparadrad1.jpeg",
+            "/assets/imgs/Equipement_medical/sparadrad2.jpg"
+          ],
+          "prix": 5000,
+          "categorie": "Equipement_medical",
+          "date": "2024-01-01T12:23:44.903Z",
+          "region": "Dakar",
+          "etoile": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "disponibilite": {
+            "disponible": true,
+            "type": "livraison",
+            "frais": 500
+          }
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "titre": "Produits Cosmetique",
+      "description": "Il s'agit de toute personne physique ou morale qui fabrique ou fait concevoir ou fabriquer un produit cosmétique et commercialise ce produit sous son nom ou sa ..",
+      "icone": "flask-outline",
+      "liste_articles": []
+    },
+    {
+      "id": "4",
+      "titre": "Produits Alimentaire",
+      "description": "Vous trouverez dans cette catégorie tous les compléments alimentaires pour la minceur, vitamines, troubles divers, sport ... et au meilleur prix !",
+      "icone": "restaurant-outline",
+      "liste_articles": []
+    }
+  ],
+  "panier": []
+}
