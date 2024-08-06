@@ -5,7 +5,7 @@ import { DetailsPage } from './details/details.page';
 import { CATEGORIE } from 'src/modele/categories';
 // import { Categories } from 'src/modele/list-categorie';
 import {register} from 'swiper/element/bundle';
-import { ServiceTechshopService } from './service-techshop.service';
+import { ServicesenepharmacieService } from './service-senepharmacie.service';
 import { Observable } from 'rxjs';
 import { CART } from 'src/modele/cart';
 register();
@@ -26,7 +26,7 @@ export class AppComponent {
   public indice :number = 0
   
  
-  constructor (private route : Router ,private monserv :ServiceTechshopService){}
+  constructor (private route : Router ,private monserv :ServicesenepharmacieService){}
 
 
 

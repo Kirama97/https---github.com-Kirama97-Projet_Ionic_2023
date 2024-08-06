@@ -4,7 +4,7 @@ import { ARTICLE } from '../../modele/article';
 // import { Articles } from '../../modele/list-articles';
 import {register} from 'swiper/element/bundle';
 import { MenuController, ToastController, ToastOptions } from '@ionic/angular';
-import { ServiceTechshopService } from '../service-techshop.service';
+import { ServicesenepharmacieService } from '../service-senepharmacie.service';
 import { CART } from 'src/modele/cart';
 import { async } from 'rxjs';
 
@@ -20,7 +20,7 @@ register();
 export class DetailsPage implements OnInit {
   isToastOpen = false;
 
-  constructor(private route:ActivatedRoute,private router:Router,public menuCtrl:MenuController , private monserv: ServiceTechshopService,private toast : ToastController) { }
+  constructor(private route:ActivatedRoute,private router:Router,public menuCtrl:MenuController , private monserv: ServicesenepharmacieService,private toast : ToastController) { }
   listArticles:ARTICLE[] | undefined
   article:ARTICLE|undefined
   panier :CART[]=[]

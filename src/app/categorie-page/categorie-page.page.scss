@@ -5,3 +5,25 @@
 
 }
 
+
+
+@media  screen and (min-width:800px) {
+
+    
+
+    .blocvideo{
+        padding: 10px;
+        display: flex;
+        align-content: center;
+        background-color:#00BF63;
+        justify-content: space-between;
+        height: 25%;
+        object-fit: cover;
+        overflow-x: hidden;
+        gap: 10px;
+        margin: 10px 0;
+        box-shadow: 0px 0px 0px 0px;
+      
+       
+      }
+}

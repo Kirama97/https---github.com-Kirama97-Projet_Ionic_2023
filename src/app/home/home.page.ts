@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { ARTICLE } from '../../modele/article';
 import { CATEGORIE } from 'src/modele/categories';
 import {register} from 'swiper/element/bundle';
-import { ServiceTechshopService } from '../service-techshop.service';
+import { ServicesenepharmacieService } from '../service-senepharmacie.service';
 import { CART } from 'src/modele/cart';
 register();
 
@@ -22,7 +22,7 @@ throw new Error('Method not implemented.');
 }
 
 
-constructor(private route :Router,private monserv :ServiceTechshopService) { }
+constructor(private route :Router,private monserv :ServicesenepharmacieService) { }
    
 listCategories : CATEGORIE[]= [];
 listArticles:ARTICLE[] =[];

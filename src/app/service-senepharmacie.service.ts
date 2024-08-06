@@ -11,7 +11,7 @@ import { CATEGORIE } from 'src/modele/categories';
 @Injectable({
   providedIn: 'root'
 })
-export class ServiceTechshopService {
+export class ServicesenepharmacieService {
 
   constructor(private http: HttpClient) { }
 
@@ -28,7 +28,7 @@ export class ServiceTechshopService {
 
     return this.http.get <Array<CATEGORIE>>(`${URL_API}/categorie`)
   }
-    // Pour la recuperation des article sur mon panier avec le json server   (techshop.json)
+    // Pour la recuperation des article sur mon panier avec le json server   (senepharmacie.json)
 
      getCart(): Observable<Array<CART>>{
        return this.http.get<Array<CART>>(`${URL_API}/panier`)

@@ -3,7 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { ARTICLE } from 'src/modele/article';
 import { CATEGORIE } from 'src/modele/categories';
 import {register} from 'swiper/element/bundle';
-import { ServiceTechshopService } from '../service-techshop.service';
+import { ServicesenepharmacieService } from '../service-senepharmacie.service';
 register();
 
 @Component({
@@ -13,7 +13,7 @@ register();
 })
 export class ListArticlePage implements OnInit {
 
-  constructor(private route:ActivatedRoute,private router:Router ,private monserv :ServiceTechshopService) { }
+  constructor(private route:ActivatedRoute,private router:Router ,private monserv :ServicesenepharmacieService) { }
   listArticles : ARTICLE[] = [];
   listCategories : CATEGORIE[]= [];
   article:ARTICLE|undefined

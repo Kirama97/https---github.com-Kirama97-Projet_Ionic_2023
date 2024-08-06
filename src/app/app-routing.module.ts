@@ -38,10 +38,7 @@ const routes: Routes = [
     path: 'ajout-article',
     loadChildren: () => import('./ajout-article/ajout-article.module').then( m => m.AjoutArticlePageModule)
   },
-  {
-    path: 'espace-membre',
-    loadChildren: () => import('./espace-membre/espace-membre.module').then( m => m.EspaceMembrePageModule)
-  },
+ 
   {
     path: 'a-propos',
     loadChildren: () => import('./a-propos/a-propos.module').then( m => m.AProposPageModule)

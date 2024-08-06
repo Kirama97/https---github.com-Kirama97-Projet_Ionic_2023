@@ -2,7 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ARTICLE } from 'src/modele/article';
-import { ServiceTechshopService } from '../service-techshop.service';
+import { ServicesenepharmacieService } from '../service-senepharmacie.service';
 // import { Articles } from 'src/modele/list-articles';
 
  @Component({
@@ -16,7 +16,7 @@ export class RecherchePage implements OnInit {
 
    article:ARTICLE|undefined
 
-  constructor(private route:Router,private monserv :ServiceTechshopService) {
+  constructor(private route:Router,private monserv :ServicesenepharmacieService) {
     
     this.listArticles = [];
     this.filteredList = this.listArticles; 

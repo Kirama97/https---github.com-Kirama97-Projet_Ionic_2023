@@ -5,7 +5,7 @@ import { CATEGORIE } from 'src/modele/categories';
 // import { Articles } from 'src/modele/list-articles';
 // import { Categories } from 'src/modele/list-categorie';
 import {register} from 'swiper/element/bundle';
-import { ServiceTechshopService } from '../service-techshop.service';
+import { ServicesenepharmacieService } from '../service-senepharmacie.service';
 register();
 
 @Component({
@@ -16,7 +16,7 @@ register();
 export class CategoriePagePage implements OnInit {
 
 
-  constructor(private route:ActivatedRoute,private router:Router, private monserv :ServiceTechshopService) { }
+  constructor(private route:ActivatedRoute,private router:Router, private monserv :ServicesenepharmacieService) { }
 
   listCategories : CATEGORIE[]= []; //tableau des categorie
   Onecategorie:CATEGORIE|undefined; //un categorie

@@ -2,7 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm, ReactiveFormsModule } from '@angular/forms';
 import { ARTICLE, disponibilite } from 'src/modele/article';
-import { ServiceTechshopService } from '../service-techshop.service';
+import { ServicesenepharmacieService } from '../service-senepharmacie.service';
 import { Camera, CameraResultType, CameraSource, GalleryImageOptions, GalleryPhotos } from '@capacitor/camera';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Filesystem, Directory, Encoding, FilesystemDirectory } from '@capacitor/filesystem';
@@ -25,7 +25,7 @@ article:ARTICLE|undefined
   tableauImages: any;
   imageSource :any ;
 donneefrom: any;
-constructor(private serv :ServiceTechshopService, private domSanitizer :  DomSanitizer ,private route : Router) { 
+constructor(private serv :ServicesenepharmacieService, private domSanitizer :  DomSanitizer ,private route : Router) { 
   
   this.New = {} as ARTICLE
   this.New.disponibilite= {} as disponibilite 

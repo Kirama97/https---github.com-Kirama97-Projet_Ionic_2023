@@ -1,6 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/torus-notched');
 .propos{
-     background-image: url('/assets/imgs/logo.png');
+     background-image: url('/assets/imgs/accueil/logo_l.png');
      background-size: cover;
      background-position: center;
      height: 100vh;
@@ -11,7 +11,7 @@
     
 }
 
-.techshop{
+.senepharmacie{
     background-color: rgba(0, 0, 0, 0.732);
     color:white;
     padding: 30px 30px 200px 30px;
@@ -22,7 +22,7 @@
    }
 
    h1{
-    color: #ffa500;
+    color: #00BF63;
     text-align: center;
    }
    p{
@@ -32,7 +32,7 @@
    
    }
    strong{
-    color: #ffa500;
+    color: #00BF63;
    }
 
 
@@ -42,7 +42,7 @@
 
 
 .contact{
-    background-color: #ffa6005f;
+    background-color: #00BF63;
     margin: 0 auto;
     border-radius:10px ;
     padding: 10px;

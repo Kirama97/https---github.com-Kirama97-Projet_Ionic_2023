@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MenuController } from '@ionic/angular';
 import { ARTICLE } from 'src/modele/article';
-import { ServiceTechshopService } from '../service-techshop.service';
+import { ServicesenepharmacieService } from '../service-senepharmacie.service';
 import { CART } from 'src/modele/cart';
 import { Observable } from 'rxjs';
 
@@ -14,7 +14,7 @@ import { Observable } from 'rxjs';
 export class PanierPage implements OnInit {
 
   
-  constructor(private route:ActivatedRoute,private router:Router,public menuCtrl:MenuController , private monserv: ServiceTechshopService) {
+  constructor(private route:ActivatedRoute,private router:Router,public menuCtrl:MenuController , private monserv: ServicesenepharmacieService) {
    }
   listArticles:ARTICLE[] | undefined
   article:ARTICLE|undefined

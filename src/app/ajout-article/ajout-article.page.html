@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-title>Senepharma</ion-title>
+    <ion-title>Senepharmacie</ion-title>
     <ion-buttons slot="end">
       <ion-button slot="icon-only">
         <ion-icon name=""></ion-icon>
@@ -67,12 +67,11 @@
           <!-- categorie -->
           <ion-item>
             <ion-select   class="form-control" label="Categorie" placeholder="categorie" name="categorie" [(ngModel)]="New.categorie" required #categorievar="ngModel" [ngClass]="{'is-invalid': categorievar.touched && !categorievar.valid }">
-              <ion-select-option value="smarphone">Smarphone</ion-select-option>
-              <ion-select-option value="smarphone">Informatique</ion-select-option>
-              <ion-select-option value="electronique">Electronique</ion-select-option>
-              <ion-select-option value="electromenage">Electromenage</ion-select-option>
-              <ion-select-option value="mode">Mode</ion-select-option>
-              <ion-select-option value="sport">Sport</ion-select-option>
+              <ion-select-option value="smarphone">Medicament</ion-select-option>
+              <ion-select-option value="smarphone">Equipement Medicale</ion-select-option>
+              <ion-select-option value="electronique">Produits Alimentaire</ion-select-option>
+              <ion-select-option value="electromenage">Produit Cosmetique </ion-select-option>
+              
             </ion-select>
           </ion-item>
                    <!-- mode d'acquisition -->
